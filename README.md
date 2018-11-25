@@ -1,17 +1,17 @@
 ### Build Dependencies
 
 The following tools are needed to build the CT software and its dependencies.
-	- [depot_tools](https://www.chromium.org/developers/how-tos/install-depot-tools)
-	- autoconf/automake etc.
-	- libtool
-	- shtool
-	- clang++ (>=3.4)
-	- cmake (>=v3.1.2)
-	- git
-	- GNU make
-	- Tcl
-	- pkg-config
-	- Python 2.7
+- [depot_tools](https://www.chromium.org/developers/how-tos/install-depot-tools)
+- autoconf/automake etc.
+- libtool
+- shtool
+- clang++ (>=3.4)
+- cmake (>=v3.1.2)
+- git
+- GNU make
+- Tcl
+- pkg-config
+- Python 2.7
 
 
 ### Build Instructions
