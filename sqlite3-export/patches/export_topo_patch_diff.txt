@@ -1,0 +1,139 @@
+diff --git a/src/createtopo.cql b/src/createtopo.cql
+new file mode 100644
+index 00000000..7f0e31f3
+--- /dev/null
++++ b/src/createtopo.cql
+@@ -0,0 +1,69 @@
++/*
++
++createtopo.cql -- provide topological ordering for fossil export
++Copyright (C) 2016 Kyle J. McKay.  All rights reserved.
++
++This program is free software; you can redistribute it and/or
++modify it under the terms of the GNU General Public License
++as published by the Free Software Foundation; either version 2
++of the License, or (at your option) any later version.
++
++This program is distributed in the hope that it will be useful,
++but WITHOUT ANY WARRANTY; without even the implied warranty of
++MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++GNU General Public License for more details.
++
++You should have received a copy of the GNU General Public License
++along with this program; if not, write to the Free Software
++Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
++
++*/
++"BEGIN;\n"
++"  DROP TABLE IF EXISTS temp.t_nodes;\n"
++"  CREATE TEMP TABLE t_nodes(n INTEGER PRIMARY KEY);\n"
++"  DROP TABLE IF EXISTS temp.t_edges;\n"
++"  CREATE TEMP TABLE t_edges(rid INTEGER PRIMARY KEY,\n"
++"    c INTEGER, p INTEGER, UNIQUE(c, p));\n"
++"  CREATE INDEX t_edges_parents ON t_edges(p, c);\n"
++"  DROP TABLE IF EXISTS temp.topo_order;\n"
++"  CREATE TEMP TABLE topo_order(n INTEGER PRIMARY KEY, ordering INTEGER);\n"
++"  CREATE INDEX topo_order_ordering ON topo_order(ordering);\n"
++"  DROP TABLE IF EXISTS temp.v_counter;\n"
++"  CREATE TEMP TABLE v_counter (v INTEGER DEFAULT 0);\n"
++"  INSERT INTO v_counter DEFAULT VALUES;\n"
++"  DROP TABLE IF EXISTS temp.v_curnode;\n"
++"  CREATE TEMP TABLE v_curnode (v INTEGER DEFAULT 0);\n"
++"  INSERT INTO v_curnode DEFAULT VALUES;\n"
++"  INSERT INTO t_nodes\n"
++"  SELECT objid FROM event JOIN blob ON objid = rid WHERE type = 'ci';\n"
++"  INSERT INTO t_edges (c, p)\n"
++"  SELECT plink.cid, plink.pid FROM t_nodes t1, t_nodes t2, plink\n"
++"  WHERE t1.n = plink.cid AND t2.n = plink.pid AND plink.cid != plink.pid;\n"
++"  INSERT INTO topo_order\n"
++"  SELECT n, NULL FROM t_nodes LEFT JOIN t_edges ON n = c WHERE p IS NULL;\n"
++"  DROP VIEW IF EXISTS temp.t_tsort;\n"
++"  CREATE TEMP VIEW t_tsort AS SELECT NULL;\n"
++"  CREATE TRIGGER t_tsort_code INSTEAD OF INSERT ON t_tsort\n"
++"  WHEN EXISTS (SELECT n FROM topo_order WHERE ordering IS NULL LIMIT 1)\n"
++"  BEGIN\n"
++"    UPDATE v_curnode SET v =\n"
++"    (SELECT n FROM topo_order WHERE ordering IS NULL LIMIT 1);\n"
++"    UPDATE v_counter SET v = v + 1;\n"
++"    UPDATE topo_order SET ordering = (SELECT v FROM v_counter)\n"
++"    WHERE n = (SELECT v FROM v_curnode);\n"
++"    INSERT INTO topo_order (n, ordering)\n"
++"    SELECT n, NULL\n"
++"    FROM t_nodes t\n"
++"    JOIN t_edges e1 ON t.n = e1.c\n"
++"    WHERE e1.p = (SELECT v FROM v_curnode) AND\n"
++"      NOT EXISTS (SELECT NULL FROM t_edges e2\n"
++"        WHERE e2.c = t.n AND e2.p != (SELECT v FROM v_curnode LIMIT 1));\n"
++"    DELETE FROM t_edges WHERE p = (SELECT v FROM v_curnode);\n"
++"  END;\n"
++"  INSERT INTO t_tsort SELECT n FROM t_nodes;\n"
++"  DROP VIEW temp.t_tsort;\n"
++"  DROP TABLE temp.v_curnode;\n"
++"  DROP TABLE temp.v_counter;\n"
++"  DROP TABLE temp.t_edges;\n"
++"  DROP TABLE temp.t_nodes;\n"
++"COMMIT;\n"
+diff --git a/src/export.c b/src/export.c
+index bca0d53f..aa1467cf 100644
+--- a/src/export.c
++++ b/src/export.c
+@@ -444,6 +444,10 @@ static void massage_refname(char *ref)
+   }
+ }
+ 
++static const char zCreateTopoOrder[] =
++#include "createtopo.cql"
++;
++
+ /*
+ ** COMMAND: export
+ **
+@@ -543,6 +547,10 @@ void export_cmd(void){
+   if( done_flag )
+     printf("feature done\n");
+ 
++  /* Step 0:  Create a proper topological ordering of the DAG
++  */
++  db_multi_exec(zCreateTopoOrder/*works-like:""*/);
++
+   /* Step 1:  Generate "blob" records for every artifact that is part
+   ** of a check-in
+   */
+@@ -603,9 +611,9 @@ void export_cmd(void){
+     "SELECT strftime('%%s',mtime), objid, coalesce(ecomment,comment),"
+     "       coalesce(euser,user),"
+     "       (SELECT value FROM tagxref WHERE rid=objid AND tagid=%d)"
+-    "  FROM event"
++    "  FROM event JOIN topo_order ON objid = n"
+     " WHERE type='ci' AND NOT EXISTS (SELECT 1 FROM oldcommit WHERE objid=rid)"
+-    " ORDER BY mtime ASC",
++    " ORDER BY ordering ASC, mtime ASC",
+     TAG_BRANCH
+   );
+   db_prepare(&q2, "INSERT INTO oldcommit VALUES (:rid)");
+@@ -637,9 +645,9 @@ void export_cmd(void){
+     else zap_crlf((char *)zComment);
+     printf("data %d\n%s\n\n", (int)strlen(zComment)+1, zComment);
+     db_prepare(&q3,
+-      "SELECT pid FROM plink"
++      "SELECT pid FROM plink, event"
+       " WHERE cid=%d AND isprim"
+-      "   AND pid IN (SELECT objid FROM event)",
++      "   AND pid=objid AND type='ci'",
+       ckinId
+     );
+     if( db_step(&q3) == SQLITE_ROW ){
+@@ -648,9 +656,9 @@ void export_cmd(void){
+       printf("from %s\n", zMark);
+       free(zMark);
+       db_prepare(&q4,
+-        "SELECT pid FROM plink"
++        "SELECT pid FROM plink, event"
+         " WHERE cid=%d AND NOT isprim"
+-        "   AND NOT EXISTS(SELECT 1 FROM phantom WHERE rid=pid)"
++        "   AND pid=objid AND type='ci'"
+         " ORDER BY pid",
+         ckinId);
+       while( db_step(&q4)==SQLITE_ROW ){
+
+---

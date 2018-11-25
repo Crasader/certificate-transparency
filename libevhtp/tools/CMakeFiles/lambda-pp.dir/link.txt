@@ -1,0 +1,1 @@
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall -fvisibility=hidden  -rdynamic CMakeFiles/lambda-pp.dir/lambda-pp.c.o  -o lambda-pp 

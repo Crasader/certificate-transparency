@@ -1,0 +1,102 @@
+.TH ldns 3 "30 May 2006"
+.SH NAME
+ldns_buffer_new, ldns_buffer_new_frm_data, ldns_buffer_clear, ldns_buffer_printf, ldns_buffer_free, ldns_buffer_export
+
+.SH SYNOPSIS
+#include <stdint.h>
+.br
+#include <stdbool.h>
+.br
+.PP
+#include <ldns/ldns.h>
+.PP
+ldns_buffer* ldns_buffer_new(size_t capacity);
+.PP
+void ldns_buffer_new_frm_data(ldns_buffer *buffer, void *data, size_t size);
+.PP
+void ldns_buffer_clear(ldns_buffer *buffer);
+.PP
+int ldns_buffer_printf(ldns_buffer *buffer, const char *format, ...);
+.PP
+void ldns_buffer_free(ldns_buffer *buffer);
+.PP
+void* ldns_buffer_export(ldns_buffer *buffer);
+.PP
+
+.SH DESCRIPTION
+.HP
+\fIldns_buffer_new\fR()
+creates a new buffer with the specified capacity.
+
+\.br
+\fBcapacity\fR: the size (in bytes) to allocate for the buffer
+\.br
+Returns the created buffer
+.PP
+.HP
+\fIldns_buffer_new_frm_data\fR()
+creates a buffer with the specified data.  The data \%IS copied
+and \%MEMORY allocations are done.  The buffer is not fixed and can
+be resized using buffer_reserve().
+
+\.br
+\fBbuffer\fR: pointer to the buffer to put the data in
+\.br
+\fBdata\fR: the data to encapsulate in the buffer
+\.br
+\fBsize\fR: the size of the data
+.PP
+.HP
+\fIldns_buffer_clear\fR()
+clears the buffer and make it ready for writing.  The buffer's limit
+is set to the capacity and the position is set to 0.
+\.br
+\fBbuffer\fR: the buffer to clear
+.PP
+.HP
+\fIldns_buffer_printf\fR()
+prints to the buffer, increasing the capacity if required using
+buffer_reserve(). The buffer's position is set to the terminating '\\\\0'
+Returns the number of characters written (not including the
+terminating '\\\\0') or -1 on failure.
+.PP
+.HP
+\fIldns_buffer_free\fR()
+frees the buffer.
+\.br
+\fB*buffer\fR: the buffer to be freed
+\.br
+Returns void
+.PP
+.HP
+\fIldns_buffer_export\fR()
+Makes the buffer fixed and returns a pointer to the data.  The
+caller is responsible for free'ing the result.
+\.br
+\fB*buffer\fR: the buffer to be exported
+\.br
+Returns void
+.PP
+.SH AUTHOR
+The ldns team at NLnet Labs. Which consists out of
+Jelte Jansen and Miek Gieben.
+
+.SH REPORTING BUGS
+Please report bugs to ldns-team@nlnetlabs.nl or in 
+our bugzilla at
+http://www.nlnetlabs.nl/bugs/index.html
+
+.SH COPYRIGHT
+Copyright (c) 2004 - 2006 NLnet Labs.
+.PP
+Licensed under the BSD License. There is NO warranty; not even for
+MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+
+.SH SEE ALSO
+\fIldns_buffer\fR.
+And \fBperldoc Net::DNS\fR, \fBRFC1034\fR,
+\fBRFC1035\fR, \fBRFC4033\fR, \fBRFC4034\fR  and \fBRFC4035\fR.
+.SH REMARKS
+This manpage was automaticly generated from the ldns source code by
+use of Doxygen and some perl.

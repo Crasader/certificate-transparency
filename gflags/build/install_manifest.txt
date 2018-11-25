@@ -1,0 +1,11 @@
+/mnt/c/Github/metal/ct/install/lib/libgflags.a
+/mnt/c/Github/metal/ct/install/lib/libgflags_nothreads.a
+/mnt/c/Github/metal/ct/install/include/gflags/gflags.h
+/mnt/c/Github/metal/ct/install/include/gflags/gflags_declare.h
+/mnt/c/Github/metal/ct/install/include/gflags/gflags_completions.h
+/mnt/c/Github/metal/ct/install/include/gflags/gflags_gflags.h
+/mnt/c/Github/metal/ct/install/lib/cmake/gflags/gflags-config.cmake
+/mnt/c/Github/metal/ct/install/lib/cmake/gflags/gflags-config-version.cmake
+/mnt/c/Github/metal/ct/install/lib/cmake/gflags/gflags-export.cmake
+/mnt/c/Github/metal/ct/install/lib/cmake/gflags/gflags-export-noconfig.cmake
+/mnt/c/Github/metal/ct/install/bin/gflags_completions.sh

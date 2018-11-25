@@ -1,0 +1,131 @@
+#!/bin/sh
+
+set -e
+
+mydir="$(cd "$(dirname "$0")" && pwd)"
+cd "$mydir"
+
+CURLOPT="--fail --location --connect-timeout 15 --speed-limit 10240"
+CURLOPT0="$CURLOPT -H 'User-Agent:'"
+
+getmd5()
+{
+  openssl dgst -md5 < "$1" 2>/dev/null | sed -e 's/^[^ ][^ ]* //'
+}
+
+getsha1()
+{
+  openssl dgst -sha1 < "$1" 2>/dev/null | sed -e 's/^[^ ][^ ]* //'
+}
+
+FS210='http://fossil-scm.org/index.html/uv/fossil-src-2.1.tar.gz'
+FS210_O='fossil-src-2.1.tar.gz'
+FS210_D='fossil-2.1'
+FS210_MD5='9f32b23cecb092d42cdf11bf003ebf8d'
+FS210_SHA1='7c7387efb4c0016de6e836dba6f7842246825678'
+
+GEX='http://repo.or.cz/git-export-filter.git'
+GEX_D='git-export-filter.git'
+
+for util in curl openssl sed tar patch make git; do
+  if ! command -v $util > /dev/null; then
+    echo Missing $util >&2
+    exit 1
+  fi
+done
+
+check_hashes() {
+  checkmd5="$(getmd5 "$1")"
+  checksha1="$(getsha1 "$1")"
+  bad=
+  if [ "$FS210_MD5" != "$checkmd5" ]; then
+    bad=1
+    echo "Wrong md5 checksum $checkmd5 (expected $FS210_MD5) for $1" >&2
+  fi
+  if [ "$FS210_SHA1" != "$checksha1" ]; then
+    bad=1
+    echo "Wrong sha1 checksum $checksha1 (expected $FS210_SHA1) for $1" >&2
+  fi
+  if [ -n "$bad" ]; then
+    echo "Checksum verifcation failed for $1" >&2
+    return 1
+  fi
+  return 0
+}
+
+if [ -r "archives/$FS210_O" ] && check_hashes "archives/$FS210_O"; then
+    FS210_O="archives/$FS210_O"
+else
+  if ! [ -r "$FS210_O" ]; then
+    echo "Downloading $FS210 to $FS210_O" >&2
+    eval "curl $CURLOPT0 -o '$FS210_O' '$FS210'"
+  fi
+  check_hashes "$FS210_O" || exit 1
+fi
+
+if ! [ -r "$FS210_D/Makefile" ]; then
+  echo "Extracting $FS210_O" >&2
+  rm -rf "$FS210_D"
+  tar -xzf "$FS210_O"
+fi
+if ! [ -r "$FS210_D/Makefile.in" ]; then
+  echo "Failed to extract $FS210_O" >&2
+  exit 1
+fi
+if ! [ -r "$FS210_D/.patched" ]; then
+  echo "Patching $FS210_D" >&2
+  patch -f "$FS210_D/src/export.c" < patches/export_c_patch_diff.txt
+  # NOTE: The topo patch makes the result GPL'd
+  (cd "$FS210_D" && patch -p1 < ../patches/export_topo_patch_diff.txt)
+  test $? -eq 0
+  patch -f "$FS210_D/VERSION" < patches/VERSION_patch_diff.txt
+  touch "$FS210_D/.patched"
+fi
+if ! [ -x "$FS210_D/fossil" ]; then
+  echo "Building $FS210_D/fossil" >&2
+  cd "$FS210_D"
+  ./configure
+  make
+  cd "$mydir"
+fi
+if ! [ -x "$FS210_D/fossil" ]; then
+  echo "Failed to build $FS210_D/fossil" >&2
+  exit 1
+fi
+
+if ! [ -r "$GEX_D/Makefile" ]; then
+  echo "Cloning $GEX" >&2
+  rm -rf "$GEX_D"
+  git clone "$GEX" "$GEX_D"
+fi
+if ! [ -r "$GEX_D/.git/HEAD" ]; then
+  echo "Failed to clone $GEX" >&2
+  exit 1
+fi
+if ! [ -x "$GEX_D/git-export-filter" ]; then
+  echo "Building $GEX_D/git-export-filter" >&2
+  cd "$GEX_D"
+  make
+  cd "$mydir"
+fi
+if ! [ -x "$GEX_D/git-export-filter" ]; then
+  echo "Failed to build $GEX_D/git-export-filter" >&2
+  exit 1
+fi
+
+if ! [ -x "./fossil" ]; then
+  rm -f ./fossil
+  ln -s "$FS210_D/fossil" ./fossil
+fi
+if ! [ -x "./git-export-filter" ]; then
+  rm -f ./git-export-filter
+  ln -s "$GEX_D/git-export-filter" ./git-export-filter
+fi
+
+echo ''
+./fossil version
+./git-export-filter --version
+echo ''
+
+echo "Ready to run import script" >&2
+exit 0

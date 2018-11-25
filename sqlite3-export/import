@@ -1,0 +1,43 @@
+#!/bin/sh
+
+set -e
+
+mydir="$(cd "$(dirname "$0")" && pwd)"
+cd "$mydir"
+
+: "${FSLURL:=http://sqlite.org/src}"
+: "${FSLREPO:=sqlite.fsl}"
+: "${GITREPO:=sqlite.git}"
+
+for util in ./fossil ./git-export-filter git; do
+  if ! command -v $util > /dev/null; then
+    echo Missing $util '(did you run the build script?)' >&2
+    exit 1
+  fi
+done
+
+if ! [ -e "$FSLREPO" ]; then
+  echo "Cloning $FSLURL into $FSLREPO" >&2
+  ./fossil clone "$FSLURL" "$FSLREPO"
+else
+  echo "Updating $FSLREPO from $FSLURL" >&2
+  ./fossil pull -R "$FSLREPO"
+fi
+
+created=
+if ! [ -r "$GITREPO/HEAD" ]; then
+  echo "Creating initial $GITREPO repository" >&2
+  git --git-dir="$GITREPO" init --bare
+  created=1
+fi
+
+echo "Exporting from $FSLREPO into $GITREPO" >&2
+./fossil export --git "$@" "$FSLREPO" | \
+./git-export-filter --authors-file sqlite_authors --require-authors \
+  --trunk-is-master --convert-tagger tagger | \
+git --git-dir="$GITREPO" fast-import --force
+
+if [ -n "$created" ]; then
+  echo "Compacting $GITREPO" >&2
+  git --git-dir="$GITREPO" gc --aggressive --prune=now
+fi

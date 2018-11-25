@@ -1,0 +1,223 @@
+diff --git a/src/export.c b/src/export.c
+index 09536804..bca0d53f 100644
+--- a/src/export.c
++++ b/src/export.c
+@@ -390,6 +390,61 @@ void export_marks(FILE* f, Bag *blobs, Bag *vers){
+ }
+ 
+ /*
++** whiltespace check
++*/
++static int is_trail_ws(int c)
++{
++	return c == ' ' || ('\011' <= c && c <= '\015');
++}
++
++/*
++** Zap the CR out of any CRLF sequences and trailing ws too
++*/
++static void zap_crlf(char *msg)
++{
++  char *src = msg;
++  char *dst = msg;
++  char last = 0;
++  for (;;) {
++    char c = *src++;
++    if( c == '\012' && last == '\015' ){
++      dst[-1] = '\012';
++    }
++    else {
++      *dst++ = c;
++    }
++    if( !c ) break;
++    last = c;
++  }
++  while ( --dst > msg && is_trail_ws(dst[-1]) )
++    dst[-1] = '\0';
++}
++
++/*
++** Make ref into a git-acceptable ref name
++*/
++static void massage_refname(char *ref)
++{
++  int i;
++  char *found;
++
++  if (!ref) return;
++  for(i=0; ref[i]; i++){
++    if( ref[i]<=' ' || strchr("~^:/\\*?[\x7f", ref[i]) ) ref[i] = '_';
++  }
++  if( ref[0]=='.' ) ref[0] = '_';
++  if( i && ref[i-1]=='.' ) ref[i-1] = '_';
++  if( i>=5 && fossil_stricmp(&ref[i-5], ".lock")==0 ) ref[i-5] = '_';
++  while ( (found=strstr(ref, "..")) ){
++    found[0] = '_';
++    found[1] = '_';
++  }
++  while ( (found=strstr(ref, "@{")) ){
++    found[0] = '_';
++  }
++}
++
++/*
+ ** COMMAND: export
+ **
+ ** Usage: %fossil export --git ?OPTIONS? ?REPOSITORY?
+@@ -406,6 +461,10 @@ void export_marks(FILE* f, Bag *blobs, Bag *vers){
+ ** Only check-ins are exported using --git.  Git does not support tickets
+ ** or wiki or tech notes or attachments, so none of those are exported.
+ **
++** If the "--notes" option is used, add a note to the refs/notes/fossil
++** notes namespace for each exported commit containing the corresponding
++** fossil check-in hash(es).
++**
+ ** If the "--import-marks FILE" option is used, it contains a list of
+ ** rids to skip.
+ **
+@@ -415,6 +474,8 @@ void export_marks(FILE* f, Bag *blobs, Bag *vers){
+ ** Options:
+ **   --export-marks FILE          export rids of exported data to FILE
+ **   --import-marks FILE          read rids of data to ignore from FILE
++**   --notes                      include refs/notes/fossil annotations
++**   --use-done-feature           use the fast-import "done" feature
+ **   --repository|-R REPOSITORY   export the given REPOSITORY
+ **
+ ** See also: import
+@@ -422,6 +483,7 @@ void export_marks(FILE* f, Bag *blobs, Bag *vers){
+ void export_cmd(void){
+   Stmt q, q2, q3;
+   int i;
++  int notes_flag, done_flag;
+   Bag blobs, vers;
+   unsigned int unused_mark = 1;
+   const char *markfile_in;
+@@ -431,6 +493,8 @@ void export_cmd(void){
+   bag_init(&vers);
+ 
+   find_option("git", 0, 0);   /* Ignore the --git option for now */
++  notes_flag = find_option("notes", 0, 0)!=0;
++  done_flag = find_option("use-done-feature", 0, 0)!=0;
+   markfile_in = find_option("import-marks", 0, 1);
+   markfile_out = find_option("export-marks", 0, 1);
+ 
+@@ -441,6 +505,7 @@ void export_cmd(void){
+   db_multi_exec("CREATE TEMPORARY TABLE oldblob(rid INTEGER PRIMARY KEY)");
+   db_multi_exec("CREATE TEMPORARY TABLE oldcommit(rid INTEGER PRIMARY KEY)");
+   db_multi_exec("CREATE TEMP TABLE xmark(tname TEXT UNIQUE, trid INT, tuuid TEXT)");
++  db_multi_exec("CREATE INDEX xmark_trid_idx ON xmark(trid, tname)");
+   if( markfile_in!=0 ){
+     Stmt qb,qc;
+     FILE *f;
+@@ -475,6 +540,8 @@ void export_cmd(void){
+     db_finalize(&qc);
+     fclose(f);
+   }
++  if( done_flag )
++    printf("feature done\n");
+ 
+   /* Step 1:  Generate "blob" records for every artifact that is part
+   ** of a check-in
+@@ -558,9 +625,7 @@ void export_cmd(void){
+     db_reset(&q2);
+     if( zBranch==0 ) zBranch = "trunk";
+     zBr = mprintf("%s", zBranch);
+-    for(i=0; zBr[i]; i++){
+-      if( !fossil_isalnum(zBr[i]) ) zBr[i] = '_';
+-    }
++    massage_refname(zBr);
+     zMark = mark_name_from_rid(ckinId, &unused_mark);
+     printf("commit refs/heads/%s\nmark %s\n", zBr, zMark);
+     free(zMark);
+@@ -568,8 +633,9 @@ void export_cmd(void){
+     printf("committer");
+     print_person(zUser);
+     printf(" %s +0000\n", zSecondsSince1970);
+-    if( zComment==0 ) zComment = "null comment";
+-    printf("data %d\n%s\n", (int)strlen(zComment), zComment);
++    if( zComment==0 ) zComment = "";
++    else zap_crlf((char *)zComment);
++    printf("data %d\n%s\n\n", (int)strlen(zComment)+1, zComment);
+     db_prepare(&q3,
+       "SELECT pid FROM plink"
+       " WHERE cid=%d AND isprim"
+@@ -605,10 +671,31 @@ void export_cmd(void){
+     );
+     while( db_step(&q4)==SQLITE_ROW ){
+       const char *zName = db_column_text(&q4,0);
++      const char *zCopy = zName;
+       int zNew = db_column_int(&q4,1);
+       int mPerm = db_column_int(&q4,2);
++      if( *zName == '"' || strchr(zName, '\012') ){
++        const char *src = zName;
++        size_t i, nameLen = strlen(zName);
++        char c, *dst = fossil_malloc(1 + 2 + (2 * nameLen));
++        zCopy = dst;
++        *dst++ = '"';
++        while( (c = *src++) ){
++          switch( c ){
++            case '\012':
++              c = 'n';
++            case '"':
++            case '\\':
++              *dst++ = '\\';
++            default:
++              *dst++ = c;
++          }
++        }
++        *dst++ = '"';
++        *dst = '\0';
++      }
+       if( zNew==0 ){
+-        printf("D %s\n", zName);
++        printf("D %s\n", zCopy);
+       }else if( bag_find(&blobs, zNew) ){
+         const char *zPerm;
+         zMark = mark_name_from_rid(zNew, &unused_mark);
+@@ -617,9 +704,23 @@ void export_cmd(void){
+           case PERM_EXE:  zPerm = "100755";   break;
+           default:        zPerm = "100644";   break;
+         }
+-        printf("M %s %s %s\n", zPerm, zMark, zName);
++        printf("M %s %s %s\n", zPerm, zMark, zCopy);
+         free(zMark);
+       }
++      if( zCopy != zName ) free((char *)zCopy);
++    }
++    if( notes_flag ){
++      char *zUuid = db_text("", "SELECT uuid FROM blob WHERE rid=%d", ckinId);
++      zMark = mark_name_from_rid(ckinId, &unused_mark);
++      printf("commit refs/notes/fossil\n");
++      printf("committer");
++      print_person(zUser);
++      printf(" %s +0000\n", zSecondsSince1970);
++      printf("data 0\n");
++      printf("N inline %s\n", zMark);
++      printf("data %d\n%s\n\n", (int)strlen(zUuid)+1, zUuid);
++      free(zMark);
++      fossil_free(zUuid);
+     }
+     db_finalize(&q4);
+     db_finalize(&q3);
+@@ -646,9 +747,7 @@ void export_cmd(void){
+     if( rid==0 || !bag_find(&vers, rid) ) continue;
+     zTagname += 4;
+     zEncoded = mprintf("%s", zTagname);
+-    for(i=0; zEncoded[i]; i++){
+-      if( !fossil_isalnum(zEncoded[i]) ) zEncoded[i] = '_';
+-    }
++    massage_refname(zEncoded);
+     printf("tag %s\n", zEncoded);
+     printf("from %s\n", zMark);
+     free(zMark);
+@@ -657,6 +756,8 @@ void export_cmd(void){
+     fossil_free(zEncoded);
+   }
+   db_finalize(&q);
++  if( done_flag )
++    printf("done\n");
+ 
+   if( markfile_out!=0 ){
+     FILE *f;
+
+---

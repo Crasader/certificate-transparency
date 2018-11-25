@@ -1,0 +1,97 @@
+.TH ldns 3 "30 May 2006"
+.SH NAME
+ldns_key_origttl, ldns_key_inception, ldns_key_expiration, ldns_key_keytag, ldns_key_pubkey_owner, ldns_key_flags
+
+.SH SYNOPSIS
+#include <stdint.h>
+.br
+#include <stdbool.h>
+.br
+.PP
+#include <ldns/ldns.h>
+.PP
+uint32_t ldns_key_origttl(const ldns_key *k);
+.PP
+uint32_t ldns_key_inception(const ldns_key *k);
+.PP
+uint32_t ldns_key_expiration(const ldns_key *k);
+.PP
+uint16_t ldns_key_keytag(const ldns_key *k);
+.PP
+ldns_rdf* ldns_key_pubkey_owner(const ldns_key *k);
+.PP
+uint16_t ldns_key_flags(const ldns_key *k);
+.PP
+
+.SH DESCRIPTION
+.HP
+\fIldns_key_origttl\fR()
+return the original ttl of the key
+\.br
+\fBk\fR: the key
+\.br
+Returns the original ttl
+.PP
+.HP
+\fIldns_key_inception\fR()
+return the key's inception date
+\.br
+\fBk\fR: the key
+\.br
+Returns the inception date
+.PP
+.HP
+\fIldns_key_expiration\fR()
+return the key's expiration date
+\.br
+\fBk\fR: the key
+\.br
+Returns the experiration date
+.PP
+.HP
+\fIldns_key_keytag\fR()
+return the keytag
+\.br
+\fBk\fR: the key
+\.br
+Returns the keytag
+.PP
+.HP
+\fIldns_key_pubkey_owner\fR()
+return the public key's owner
+\.br
+\fBk\fR: the key
+\.br
+Returns the owner
+.PP
+.HP
+\fIldns_key_flags\fR()
+return the flag of the key
+\.br
+\fBk\fR: the key
+\.br
+Returns the flag
+.PP
+.SH AUTHOR
+The ldns team at NLnet Labs. Which consists out of
+Jelte Jansen and Miek Gieben.
+
+.SH REPORTING BUGS
+Please report bugs to ldns-team@nlnetlabs.nl or in 
+our bugzilla at
+http://www.nlnetlabs.nl/bugs/index.html
+
+.SH COPYRIGHT
+Copyright (c) 2004 - 2006 NLnet Labs.
+.PP
+Licensed under the BSD License. There is NO warranty; not even for
+MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+
+.SH SEE ALSO
+\fIldns_key\fR.
+And \fBperldoc Net::DNS\fR, \fBRFC1034\fR,
+\fBRFC1035\fR, \fBRFC4033\fR, \fBRFC4034\fR  and \fBRFC4035\fR.
+.SH REMARKS
+This manpage was automaticly generated from the ldns source code by
+use of Doxygen and some perl.

@@ -1,0 +1,1007 @@
+The system is: Linux - 4.4.0-17134-Microsoft - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/clang 
+Build flags: -fPIC
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/3.13.0/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/clang++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/3.13.0/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a6669/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a6669.dir/build.make CMakeFiles/cmTC_a6669.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a6669.dir/testCCompiler.c.o
+/usr/bin/clang   -fPIC    -o CMakeFiles/cmTC_a6669.dir/testCCompiler.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_a6669
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6669.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC     -rdynamic CMakeFiles/cmTC_a6669.dir/testCCompiler.c.o  -o cmTC_a6669 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b42f2/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b42f2.dir/build.make CMakeFiles/cmTC_b42f2.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o
+/usr/bin/clang   -fPIC    -o CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_b42f2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b42f2.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC    -v -rdynamic CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o  -o cmTC_b42f2 
+clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/6.0.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.4.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6.0.0
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b42f2 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_b42f2/fast"]
+  ignore line: [make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b42f2.dir/build.make CMakeFiles/cmTC_b42f2.dir/build]
+  ignore line: [make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/clang   -fPIC    -o CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_b42f2]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b42f2.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/clang -fPIC    -v -rdynamic CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o  -o cmTC_b42f2 ]
+  ignore line: [clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/6.0.0]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.4.0]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6.0.0]
+  ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b42f2 /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b42f2] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o] ==> ignore
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0]
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../..] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../..]
+    arg [-L/usr/lib/llvm-3.8/bin/../lib] ==> dir [/usr/lib/llvm-3.8/bin/../lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTC_b42f2.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0] ==> [/usr/lib/gcc/x86_64-linux-gnu/5.4.0]
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/llvm-3.8/bin/../lib] ==> [/usr/lib/llvm-3.8/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5.4.0;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/lib/llvm-3.8/lib;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_70e81/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_70e81.dir/build.make CMakeFiles/cmTC_70e81.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70e81.dir/feature_tests.c.o
+/usr/bin/clang   -fPIC    -std=c11 -o CMakeFiles/cmTC_70e81.dir/feature_tests.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/feature_tests.c
+Linking C executable cmTC_70e81
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70e81.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC     -rdynamic CMakeFiles/cmTC_70e81.dir/feature_tests.c.o  -o cmTC_70e81 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_94945/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_94945.dir/build.make CMakeFiles/cmTC_94945.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94945.dir/feature_tests.c.o
+/usr/bin/clang   -fPIC    -std=c99 -o CMakeFiles/cmTC_94945.dir/feature_tests.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/feature_tests.c
+Linking C executable cmTC_94945
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94945.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC     -rdynamic CMakeFiles/cmTC_94945.dir/feature_tests.c.o  -o cmTC_94945 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7c5b7/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_7c5b7.dir/build.make CMakeFiles/cmTC_7c5b7.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c5b7.dir/feature_tests.c.o
+/usr/bin/clang   -fPIC    -std=c90 -o CMakeFiles/cmTC_7c5b7.dir/feature_tests.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7c5b7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c5b7.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC     -rdynamic CMakeFiles/cmTC_7c5b7.dir/feature_tests.c.o  -o cmTC_7c5b7 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0fe7d/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0fe7d.dir/build.make CMakeFiles/cmTC_0fe7d.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0fe7d.dir/testCXXCompiler.cxx.o
+/usr/bin/clang++     -o CMakeFiles/cmTC_0fe7d.dir/testCXXCompiler.cxx.o -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_0fe7d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fe7d.dir/link.txt --verbose=1
+/usr/bin/clang++       -rdynamic CMakeFiles/cmTC_0fe7d.dir/testCXXCompiler.cxx.o  -o cmTC_0fe7d 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_647df/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_647df.dir/build.make CMakeFiles/cmTC_647df.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/clang++     -o CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_647df
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_647df.dir/link.txt --verbose=1
+/usr/bin/clang++      -v -rdynamic CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_647df 
+clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/6.0.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.4.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6.0.0
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_647df /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_647df/fast"]
+  ignore line: [make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_647df.dir/build.make CMakeFiles/cmTC_647df.dir/build]
+  ignore line: [make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/clang++     -o CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_647df]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_647df.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/clang++      -v -rdynamic CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_647df ]
+  ignore line: [clang version 3.8.0-2ubuntu4 (tags/RELEASE_380/final)]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/6.0.0]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.4.0]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/6.0.0]
+  ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_647df /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../.. -L/usr/lib/llvm-3.8/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o /usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_647df] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtbegin.o] ==> ignore
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0]
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../..] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../..]
+    arg [-L/usr/lib/llvm-3.8/bin/../lib] ==> dir [/usr/lib/llvm-3.8/bin/../lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTC_647df.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/crtend.o] ==> ignore
+    arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0] ==> [/usr/lib/gcc/x86_64-linux-gnu/5.4.0]
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/llvm-3.8/bin/../lib] ==> [/usr/lib/llvm-3.8/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5.4.0;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/lib/llvm-3.8/lib;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6e3f1/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6e3f1.dir/build.make CMakeFiles/cmTC_6e3f1.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6e3f1.dir/feature_tests.cxx.o
+/usr/bin/clang++    -std=c++1z -o CMakeFiles/cmTC_6e3f1.dir/feature_tests.cxx.o -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6e3f1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e3f1.dir/link.txt --verbose=1
+/usr/bin/clang++       -rdynamic CMakeFiles/cmTC_6e3f1.dir/feature_tests.cxx.o  -o cmTC_6e3f1 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_35102/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_35102.dir/build.make CMakeFiles/cmTC_35102.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_35102.dir/feature_tests.cxx.o
+/usr/bin/clang++    -std=c++14 -o CMakeFiles/cmTC_35102.dir/feature_tests.cxx.o -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_35102
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35102.dir/link.txt --verbose=1
+/usr/bin/clang++       -rdynamic CMakeFiles/cmTC_35102.dir/feature_tests.cxx.o  -o cmTC_35102 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_18386/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_18386.dir/build.make CMakeFiles/cmTC_18386.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_18386.dir/feature_tests.cxx.o
+/usr/bin/clang++    -std=c++11 -o CMakeFiles/cmTC_18386.dir/feature_tests.cxx.o -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_18386
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18386.dir/link.txt --verbose=1
+/usr/bin/clang++       -rdynamic CMakeFiles/cmTC_18386.dir/feature_tests.cxx.o  -o cmTC_18386 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_68082/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_68082.dir/build.make CMakeFiles/cmTC_68082.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_68082.dir/feature_tests.cxx.o
+/usr/bin/clang++    -std=c++98 -o CMakeFiles/cmTC_68082.dir/feature_tests.cxx.o -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_68082
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68082.dir/link.txt --verbose=1
+/usr/bin/clang++       -rdynamic CMakeFiles/cmTC_68082.dir/feature_tests.cxx.o  -o cmTC_68082 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the function strndup exists passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7b428/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_7b428.dir/build.make CMakeFiles/cmTC_7b428.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b428.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall -DCHECK_FUNCTION_EXISTS=strndup   -o CMakeFiles/cmTC_7b428.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.13/Modules/CheckFunctionExists.c
+/usr/local/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strndup' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strndup
+                              ^
+/usr/local/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: 'strndup' is a builtin with type 'char *(const char *, unsigned long)'
+<command line>:2:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strndup
+                              ^
+1 warning generated.
+Linking C executable cmTC_7b428
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b428.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall -DCHECK_FUNCTION_EXISTS=strndup    -rdynamic CMakeFiles/cmTC_7b428.dir/CheckFunctionExists.c.o  -o cmTC_7b428 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strnlen exists passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ed5f5/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ed5f5.dir/build.make CMakeFiles/cmTC_ed5f5.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed5f5.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall -DCHECK_FUNCTION_EXISTS=strnlen   -o CMakeFiles/cmTC_ed5f5.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ed5f5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed5f5.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall -DCHECK_FUNCTION_EXISTS=strnlen    -rdynamic CMakeFiles/cmTC_ed5f5.dir/CheckFunctionExists.c.o  -o cmTC_ed5f5 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files strings.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5bffc/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_5bffc.dir/build.make CMakeFiles/cmTC_5bffc.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5bffc.dir/HAVE_STRINGS_H.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_5bffc.dir/HAVE_STRINGS_H.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_STRINGS_H.c
+Linking C executable cmTC_5bffc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bffc.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_5bffc.dir/HAVE_STRINGS_H.c.o  -o cmTC_5bffc 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files string.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d3ced/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_d3ced.dir/build.make CMakeFiles/cmTC_d3ced.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d3ced.dir/HAVE_STRING_H.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_d3ced.dir/HAVE_STRING_H.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_STRING_H.c
+Linking C executable cmTC_d3ced
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3ced.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_d3ced.dir/HAVE_STRING_H.c.o  -o cmTC_d3ced 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdlib.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f386/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0f386.dir/build.make CMakeFiles/cmTC_0f386.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f386.dir/HAVE_STDLIB_H.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_0f386.dir/HAVE_STDLIB_H.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_STDLIB_H.c
+Linking C executable cmTC_0f386
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f386.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_0f386.dir/HAVE_STDLIB_H.c.o  -o cmTC_0f386 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/time.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0a40a/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0a40a.dir/build.make CMakeFiles/cmTC_0a40a.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0a40a.dir/HAVE_SYS_TIME_H.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_0a40a.dir/HAVE_SYS_TIME_H.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_SYS_TIME_H.c
+Linking C executable cmTC_0a40a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a40a.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_0a40a.dir/HAVE_SYS_TIME_H.c.o  -o cmTC_0a40a 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/times.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aeb97/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_aeb97.dir/build.make CMakeFiles/cmTC_aeb97.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aeb97.dir/HAVE_SYS_TIMES_H.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_aeb97.dir/HAVE_SYS_TIMES_H.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_SYS_TIMES_H.c
+Linking C executable cmTC_aeb97
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeb97.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_aeb97.dir/HAVE_SYS_TIMES_H.c.o  -o cmTC_aeb97 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_faa2c/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_faa2c.dir/build.make CMakeFiles/cmTC_faa2c.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_faa2c.dir/HAVE_UNISTD_H.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_faa2c.dir/HAVE_UNISTD_H.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_UNISTD_H.c
+Linking C executable cmTC_faa2c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_faa2c.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_faa2c.dir/HAVE_UNISTD_H.c.o  -o cmTC_faa2c 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdarg.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ddcb0/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ddcb0.dir/build.make CMakeFiles/cmTC_ddcb0.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ddcb0.dir/HAVE_STDARG_PROTOTYPES.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_ddcb0.dir/HAVE_STDARG_PROTOTYPES.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_STDARG_PROTOTYPES.c
+Linking C executable cmTC_ddcb0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddcb0.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_ddcb0.dir/HAVE_STDARG_PROTOTYPES.c.o  -o cmTC_ddcb0 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/queue.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f69d9/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_f69d9.dir/build.make CMakeFiles/cmTC_f69d9.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f69d9.dir/HAVE_SYS_QUEUE.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_f69d9.dir/HAVE_SYS_QUEUE.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_SYS_QUEUE.c
+Linking C executable cmTC_f69d9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f69d9.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_f69d9.dir/HAVE_SYS_QUEUE.c.o  -o cmTC_f69d9 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/un.h exist passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_436e7/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_436e7.dir/build.make CMakeFiles/cmTC_436e7.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_436e7.dir/HAVE_SYS_UN.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_436e7.dir/HAVE_SYS_UN.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN.c
+Linking C executable cmTC_436e7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_436e7.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_436e7.dir/HAVE_SYS_UN.c.o  -o cmTC_436e7 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9c18c/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_9c18c.dir/build.make CMakeFiles/cmTC_9c18c.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9c18c.dir/CheckIncludeFile.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_9c18c.dir/CheckIncludeFile.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9c18c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c18c.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_9c18c.dir/CheckIncludeFile.c.o  -o cmTC_9c18c 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60378/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_60378.dir/build.make CMakeFiles/cmTC_60378.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60378.dir/CheckIncludeFile.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_60378.dir/CheckIncludeFile.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_60378
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60378.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_60378.dir/CheckIncludeFile.c.o  -o cmTC_60378 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_25473/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_25473.dir/build.make CMakeFiles/cmTC_25473.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25473.dir/CheckIncludeFile.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_25473.dir/CheckIncludeFile.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_25473
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25473.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_25473.dir/CheckIncludeFile.c.o  -o cmTC_25473 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining size of int passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3ca1c/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_3ca1c.dir/build.make CMakeFiles/cmTC_3ca1c.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ca1c.dir/SIZEOF_INT.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_3ca1c.dir/SIZEOF_INT.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_3ca1c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ca1c.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_3ca1c.dir/SIZEOF_INT.c.o  -o cmTC_3ca1c 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining size of long passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_073ac/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_073ac.dir/build.make CMakeFiles/cmTC_073ac.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_073ac.dir/SIZEOF_LONG.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_073ac.dir/SIZEOF_LONG.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_073ac
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_073ac.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_073ac.dir/SIZEOF_LONG.c.o  -o cmTC_073ac 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining size of short passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f47b/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0f47b.dir/build.make CMakeFiles/cmTC_0f47b.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f47b.dir/SIZEOF_SHORT.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_0f47b.dir/SIZEOF_SHORT.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckTypeSize/SIZEOF_SHORT.c
+Linking C executable cmTC_0f47b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f47b.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_0f47b.dir/SIZEOF_SHORT.c.o  -o cmTC_0f47b 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_567c3/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_567c3.dir/build.make CMakeFiles/cmTC_567c3.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_567c3.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_567c3.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_567c3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_567c3.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_567c3.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_567c3 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e319f/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_e319f.dir/build.make CMakeFiles/cmTC_e319f.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e319f.dir/TestEndianess.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall    -o CMakeFiles/cmTC_e319f.dir/TestEndianess.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_e319f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e319f.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall     -rdynamic CMakeFiles/cmTC_e319f.dir/TestEndianess.c.o  -o cmTC_e319f 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C SOURCE FILE Test EVHTP_HAS_VISIBILITY_HIDDEN succeeded with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3a925/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_3a925.dir/build.make CMakeFiles/cmTC_3a925.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a925.dir/src.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall -DEVHTP_HAS_VISIBILITY_HIDDEN   -fvisibility=hidden -o CMakeFiles/cmTC_3a925.dir/src.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3a925
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a925.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall -DEVHTP_HAS_VISIBILITY_HIDDEN    -rdynamic CMakeFiles/cmTC_3a925.dir/src.c.o  -o cmTC_3a925 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test EVHTP_HAS_C99 succeeded with the following output:
+Change Dir: /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e645c/fast"
+make[2]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_e645c.dir/build.make CMakeFiles/cmTC_e645c.dir/build
+make[3]: Entering directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e645c.dir/src.c.o
+/usr/bin/clang   -fPIC -DPROJECT_VERSION=1.2.11 -Wall -DEVHTP_HAS_C99   -std=c99 -o CMakeFiles/cmTC_e645c.dir/src.c.o   -c /mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e645c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e645c.dir/link.txt --verbose=1
+/usr/bin/clang -fPIC -DPROJECT_VERSION=1.2.11 -Wall -DEVHTP_HAS_C99    -rdynamic CMakeFiles/cmTC_e645c.dir/src.c.o  -o cmTC_e645c 
+make[3]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+make[2]: Leaving directory '/mnt/c/Github/metal/ct/libevhtp/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }

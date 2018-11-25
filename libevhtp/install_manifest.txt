@@ -1,0 +1,6 @@
+/mnt/c/Github/metal/ct/install/lib/libevhtp.a
+/mnt/c/Github/metal/ct/install/include/evhtp/evhtp.h
+/mnt/c/Github/metal/ct/install/include/evhtp/htparse.h
+/mnt/c/Github/metal/ct/install/include/evhtp/evhtp-config.h
+/mnt/c/Github/metal/ct/install/include/evhtp/evthr.h
+/mnt/c/Github/metal/ct/install/lib/pkgconfig/evhtp.pc

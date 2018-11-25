@@ -1,0 +1,2 @@
+/usr/bin/ar qc libevhtp.a  CMakeFiles/evhtp.dir/evhtp.c.o CMakeFiles/evhtp.dir/evhtp_numtoa.c.o CMakeFiles/evhtp.dir/htparse.c.o CMakeFiles/evhtp.dir/evthr.c.o
+/usr/bin/ranlib libevhtp.a
