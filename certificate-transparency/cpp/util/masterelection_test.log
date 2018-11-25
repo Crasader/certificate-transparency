@@ -1,0 +1,21 @@
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from ElectionTest
+[ RUN      ] ElectionTest.SingleInstanceBecomesMaster
+[       OK ] ElectionTest.SingleInstanceBecomesMaster (19 ms)
+[ RUN      ] ElectionTest.MultiInstanceElection
+[       OK ] ElectionTest.MultiInstanceElection (4008 ms)
+[ RUN      ] ElectionTest.RejoinElection
+[       OK ] ElectionTest.RejoinElection (23 ms)
+[ RUN      ] ElectionTest.OkToCallStartAndStopElectionMultipleTimes
+[       OK ] ElectionTest.OkToCallStartAndStopElectionMultipleTimes (2 ms)
+[ RUN      ] ElectionTest.RetresCreatingProposal
+[       OK ] ElectionTest.RetresCreatingProposal (4007 ms)
+[ RUN      ] ElectionTest.ElectionMania
+[       OK ] ElectionTest.ElectionMania (3146 ms)
+[----------] 6 tests from ElectionTest (11279 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (11279 ms total)
+[  PASSED  ] 6 tests.
+PASS cpp/util/masterelection_test (exit status: 0)

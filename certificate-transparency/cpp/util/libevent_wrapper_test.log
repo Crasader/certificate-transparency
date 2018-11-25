@@ -1,0 +1,20 @@
+[==========] Running 3 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from LibEventWrapperDeathTest
+[ RUN      ] LibEventWrapperDeathTest.TestCheckNotOnEventThread
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] LibEventWrapperDeathTest.TestCheckNotOnEventThread (119 ms)
+[----------] 1 test from LibEventWrapperDeathTest (119 ms total)
+
+[----------] 2 tests from LibEventWrapperTest
+[ RUN      ] LibEventWrapperTest.TestOnEventThread
+[       OK ] LibEventWrapperTest.TestOnEventThread (1 ms)
+[ RUN      ] LibEventWrapperTest.TestTurtlesAllTheWayDown
+[       OK ] LibEventWrapperTest.TestTurtlesAllTheWayDown (16 ms)
+[----------] 2 tests from LibEventWrapperTest (17 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test cases ran. (137 ms total)
+[  PASSED  ] 3 tests.
+PASS cpp/util/libevent_wrapper_test (exit status: 0)

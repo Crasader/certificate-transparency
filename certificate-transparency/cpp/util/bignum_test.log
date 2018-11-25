@@ -1,0 +1,53 @@
+[==========] Running 22 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 22 tests from BigNumTest
+[ RUN      ] BigNumTest.TestDefaultCtor
+[       OK ] BigNumTest.TestDefaultCtor (0 ms)
+[ RUN      ] BigNumTest.TestWordCtor
+[       OK ] BigNumTest.TestWordCtor (0 ms)
+[ RUN      ] BigNumTest.TestCopyCtor
+[       OK ] BigNumTest.TestCopyCtor (0 ms)
+[ RUN      ] BigNumTest.TestSubtractEqualsOperator
+[       OK ] BigNumTest.TestSubtractEqualsOperator (0 ms)
+[ RUN      ] BigNumTest.TestSubtractEqualsBigNumOperator
+[       OK ] BigNumTest.TestSubtractEqualsBigNumOperator (0 ms)
+[ RUN      ] BigNumTest.TestAddEqualsOperator
+[       OK ] BigNumTest.TestAddEqualsOperator (0 ms)
+[ RUN      ] BigNumTest.TestAddEqualsBigNumOperator
+[       OK ] BigNumTest.TestAddEqualsBigNumOperator (0 ms)
+[ RUN      ] BigNumTest.TestEqualsBigNumOperator
+[       OK ] BigNumTest.TestEqualsBigNumOperator (0 ms)
+[ RUN      ] BigNumTest.TestLShiftEqualsOperator
+[       OK ] BigNumTest.TestLShiftEqualsOperator (0 ms)
+[ RUN      ] BigNumTest.TestRShiftEqualsOperator
+[       OK ] BigNumTest.TestRShiftEqualsOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumEqualsBigNumOperator
+[       OK ] BigNumTest.TestBigNumEqualsBigNumOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumEqualsIntOperator
+[       OK ] BigNumTest.TestBigNumEqualsIntOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumLessThanBigNumOperator
+[       OK ] BigNumTest.TestBigNumLessThanBigNumOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumLessThanIntOperator
+[       OK ] BigNumTest.TestBigNumLessThanIntOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumGreaterThanBigNumOperator
+[       OK ] BigNumTest.TestBigNumGreaterThanBigNumOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumGreaterThanIntOperator
+[       OK ] BigNumTest.TestBigNumGreaterThanIntOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumAddBigNumOperator
+[       OK ] BigNumTest.TestBigNumAddBigNumOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumAddIntOperator
+[       OK ] BigNumTest.TestBigNumAddIntOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumSubtractBigNumOperator
+[       OK ] BigNumTest.TestBigNumSubtractBigNumOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumSubtractIntOperator
+[       OK ] BigNumTest.TestBigNumSubtractIntOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumLeftShiftOperator
+[       OK ] BigNumTest.TestBigNumLeftShiftOperator (0 ms)
+[ RUN      ] BigNumTest.TestBigNumRightShiftOperator
+[       OK ] BigNumTest.TestBigNumRightShiftOperator (0 ms)
+[----------] 22 tests from BigNumTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 22 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 22 tests.
+PASS cpp/util/bignum_test (exit status: 0)

@@ -1,0 +1,60 @@
+[==========] Running 22 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 22 tests from CertCheckerTest
+[ RUN      ] CertCheckerTest.LoadTrustedCertificates
+[       OK ] CertCheckerTest.LoadTrustedCertificates (14 ms)
+[ RUN      ] CertCheckerTest.LoadTrustedCertificatesFromMemory
+[       OK ] CertCheckerTest.LoadTrustedCertificatesFromMemory (1 ms)
+[ RUN      ] CertCheckerTest.LoadTrustedCertificatesLoadsAll
+[       OK ] CertCheckerTest.LoadTrustedCertificatesLoadsAll (2 ms)
+[ RUN      ] CertCheckerTest.LoadTrustedCertificatesFromMemoryLoadsAll
+[       OK ] CertCheckerTest.LoadTrustedCertificatesFromMemoryLoadsAll (2 ms)
+[ RUN      ] CertCheckerTest.LoadTrustedCertificatesIgnoresDuplicates
+[       OK ] CertCheckerTest.LoadTrustedCertificatesIgnoresDuplicates (3 ms)
+[ RUN      ] CertCheckerTest.LoadTrustedCertificatesMissingFile
+E1124 20:06:07.718982   561 cert_checker.cc:44] Failed to open file ./test/testdata/test-nonexistent.pem for reading
+E1124 20:06:07.740206   561 cert_checker.cc:45] OpenSSL errors left on stack:
+	error:02001002:system library:fopen:No such file or directory
+	error:20074002:BIO routines:FILE_CTRL:system lib
+[       OK ] CertCheckerTest.LoadTrustedCertificatesMissingFile (24 ms)
+[ RUN      ] CertCheckerTest.LoadTrustedCertificatesCorruptedFile
+E1124 20:06:07.743638   561 cert_checker.cc:105] Badly encoded certificate file.
+[       OK ] CertCheckerTest.LoadTrustedCertificatesCorruptedFile (2 ms)
+[ RUN      ] CertCheckerTest.Certificate
+[       OK ] CertCheckerTest.Certificate (3 ms)
+[ RUN      ] CertCheckerTest.CertificateWithRoot
+[       OK ] CertCheckerTest.CertificateWithRoot (2 ms)
+[ RUN      ] CertCheckerTest.TrimsRepeatedRoots
+[       OK ] CertCheckerTest.TrimsRepeatedRoots (3 ms)
+[ RUN      ] CertCheckerTest.Intermediates
+E1124 20:06:07.753409   561 cert_checker.cc:155] Failed to check issuer chain
+[       OK ] CertCheckerTest.Intermediates (2 ms)
+[ RUN      ] CertCheckerTest.PreCert
+[       OK ] CertCheckerTest.PreCert (3 ms)
+[ RUN      ] CertCheckerTest.PreCertWithPreCa
+[       OK ] CertCheckerTest.PreCertWithPreCa (2 ms)
+[ RUN      ] CertCheckerTest.CertAsPreCert
+[       OK ] CertCheckerTest.CertAsPreCert (2 ms)
+[ RUN      ] CertCheckerTest.PreCertAsCert
+[       OK ] CertCheckerTest.PreCertAsCert (2 ms)
+[ RUN      ] CertCheckerTest.AcceptNoBasicConstraintsAndMd2
+[       OK ] CertCheckerTest.AcceptNoBasicConstraintsAndMd2 (3 ms)
+[ RUN      ] CertCheckerTest.DontAcceptNoBasicConstraints
+E1124 20:06:07.767868   561 cert_checker.cc:155] Failed to check issuer chain
+[       OK ] CertCheckerTest.DontAcceptNoBasicConstraints (3 ms)
+[ RUN      ] CertCheckerTest.DontAcceptMD2
+[       OK ] CertCheckerTest.DontAcceptMD2 (2 ms)
+[ RUN      ] CertCheckerTest.ResolveIssuerCollisions
+[       OK ] CertCheckerTest.ResolveIssuerCollisions (6 ms)
+[ RUN      ] CertCheckerTest.TestDsaPrecertFailsRootNotTrusted
+[       OK ] CertCheckerTest.TestDsaPrecertFailsRootNotTrusted (4 ms)
+[ RUN      ] CertCheckerTest.TestDsaPrecertChain
+[       OK ] CertCheckerTest.TestDsaPrecertChain (3 ms)
+[ RUN      ] CertCheckerTest.TestDsaPrecertChainRejectsInvalidDsaSig
+[       OK ] CertCheckerTest.TestDsaPrecertChainRejectsInvalidDsaSig (3 ms)
+[----------] 22 tests from CertCheckerTest (92 ms total)
+
+[----------] Global test environment tear-down
+[==========] 22 tests from 1 test case ran. (92 ms total)
+[  PASSED  ] 22 tests.
+PASS cpp/log/cert_checker_test (exit status: 0)

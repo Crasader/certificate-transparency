@@ -1,0 +1,106 @@
+[==========] Running 41 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 6 tests from EtcdDeathTest
+[ RUN      ] EtcdDeathTest.SplitHostsWithInvalidHostPortString
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeathTest.SplitHostsWithInvalidHostPortString (97 ms)
+[ RUN      ] EtcdDeathTest.SplitHostsWithNegativePort
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeathTest.SplitHostsWithNegativePort (91 ms)
+[ RUN      ] EtcdDeathTest.SplitHostsWithOutOfRangePort
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeathTest.SplitHostsWithOutOfRangePort (91 ms)
+[ RUN      ] EtcdDeathTest.SplitHostsWithQuotedUrlInList
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeathTest.SplitHostsWithQuotedUrlInList (90 ms)
+[ RUN      ] EtcdDeathTest.SplitHostsWithQuotedUrl
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeathTest.SplitHostsWithQuotedUrl (113 ms)
+[ RUN      ] EtcdDeathTest.UrlRejectsQuotedValue
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeathTest.UrlRejectsQuotedValue (154 ms)
+[----------] 6 tests from EtcdDeathTest (636 ms total)
+
+[----------] 35 tests from EtcdTest
+[ RUN      ] EtcdTest.Get
+[       OK ] EtcdTest.Get (14 ms)
+[ RUN      ] EtcdTest.GetRecursive
+[       OK ] EtcdTest.GetRecursive (1 ms)
+[ RUN      ] EtcdTest.GetForInvalidKey
+[       OK ] EtcdTest.GetForInvalidKey (2 ms)
+[ RUN      ] EtcdTest.GetAll
+[       OK ] EtcdTest.GetAll (2 ms)
+[ RUN      ] EtcdTest.GetWaitTooOld
+[       OK ] EtcdTest.GetWaitTooOld (2 ms)
+[ RUN      ] EtcdTest.Create
+[       OK ] EtcdTest.Create (2 ms)
+[ RUN      ] EtcdTest.CreateFails
+[       OK ] EtcdTest.CreateFails (2 ms)
+[ RUN      ] EtcdTest.CreateWithTTL
+[       OK ] EtcdTest.CreateWithTTL (2 ms)
+[ RUN      ] EtcdTest.CreateWithTTLFails
+[       OK ] EtcdTest.CreateWithTTLFails (2 ms)
+[ RUN      ] EtcdTest.Update
+[       OK ] EtcdTest.Update (1 ms)
+[ RUN      ] EtcdTest.UpdateFails
+[       OK ] EtcdTest.UpdateFails (2 ms)
+[ RUN      ] EtcdTest.UpdateWithTTL
+[       OK ] EtcdTest.UpdateWithTTL (2 ms)
+[ RUN      ] EtcdTest.UpdateWithTTLFails
+[       OK ] EtcdTest.UpdateWithTTLFails (2 ms)
+[ RUN      ] EtcdTest.ForceSetForPreexistingKey
+[       OK ] EtcdTest.ForceSetForPreexistingKey (2 ms)
+[ RUN      ] EtcdTest.ForceSetForNewKey
+[       OK ] EtcdTest.ForceSetForNewKey (2 ms)
+[ RUN      ] EtcdTest.ForceSetWithTTLForPreexistingKey
+[       OK ] EtcdTest.ForceSetWithTTLForPreexistingKey (2 ms)
+[ RUN      ] EtcdTest.ForceSetWithTTLForNewKey
+[       OK ] EtcdTest.ForceSetWithTTLForNewKey (2 ms)
+[ RUN      ] EtcdTest.Delete
+[       OK ] EtcdTest.Delete (2 ms)
+[ RUN      ] EtcdTest.DeleteFails
+[       OK ] EtcdTest.DeleteFails (2 ms)
+[ RUN      ] EtcdTest.ForceDelete
+[       OK ] EtcdTest.ForceDelete (2 ms)
+[ RUN      ] EtcdTest.WatchInitialGetFailureCausesRetry
+[       OK ] EtcdTest.WatchInitialGetFailureCausesRetry (12 ms)
+[ RUN      ] EtcdTest.WatchInitialGetFailureRetriesOnNextEtcd
+[       OK ] EtcdTest.WatchInitialGetFailureRetriesOnNextEtcd (2 ms)
+[ RUN      ] EtcdTest.WatchHangingGetTimeoutCausesRetry
+[       OK ] EtcdTest.WatchHangingGetTimeoutCausesRetry (2 ms)
+[ RUN      ] EtcdTest.UnavailableEtcdRetriesOnNewServer
+[       OK ] EtcdTest.UnavailableEtcdRetriesOnNewServer (4 ms)
+[ RUN      ] EtcdTest.FollowsMasterChangeRedirectToNewHost
+[       OK ] EtcdTest.FollowsMasterChangeRedirectToNewHost (2 ms)
+[ RUN      ] EtcdTest.FollowsMasterChangeRedirectToKnownHost
+[       OK ] EtcdTest.FollowsMasterChangeRedirectToKnownHost (3 ms)
+[ RUN      ] EtcdTest.GetStoreStats
+[       OK ] EtcdTest.GetStoreStats (2 ms)
+[ RUN      ] EtcdTest.SplitHosts
+[       OK ] EtcdTest.SplitHosts (2 ms)
+[ RUN      ] EtcdTest.SplitHostsIgnoresBlanks
+[       OK ] EtcdTest.SplitHostsIgnoresBlanks (1 ms)
+[ RUN      ] EtcdTest.SplitHostsIgnoresTrailingComma
+[       OK ] EtcdTest.SplitHostsIgnoresTrailingComma (1 ms)
+[ RUN      ] EtcdTest.SplitHostsIgnoresPrecedingComma
+[       OK ] EtcdTest.SplitHostsIgnoresPrecedingComma (1 ms)
+[ RUN      ] EtcdTest.SplitHostsWithAllBlanks
+[       OK ] EtcdTest.SplitHostsWithAllBlanks (1 ms)
+[ RUN      ] EtcdTest.SplitHostsWithEmptyString
+[       OK ] EtcdTest.SplitHostsWithEmptyString (2 ms)
+[ RUN      ] EtcdTest.LogsVersion
+[       OK ] EtcdTest.LogsVersion (2 ms)
+[ RUN      ] EtcdTest.LogsVersionWhenChangingServer
+[       OK ] EtcdTest.LogsVersionWhenChangingServer (2 ms)
+[----------] 35 tests from EtcdTest (91 ms total)
+
+[----------] Global test environment tear-down
+[==========] 41 tests from 2 test cases ran. (727 ms total)
+[  PASSED  ] 41 tests.
+PASS cpp/util/etcd_test (exit status: 0)

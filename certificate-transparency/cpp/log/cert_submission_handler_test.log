@@ -1,0 +1,32 @@
+[==========] Running 11 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 11 tests from CertSubmissionHandlerTest
+[ RUN      ] CertSubmissionHandlerTest.SubmitCert
+[       OK ] CertSubmissionHandlerTest.SubmitCert (22 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitEmptyCert
+[       OK ] CertSubmissionHandlerTest.SubmitEmptyCert (3 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitInvalidCert
+[       OK ] CertSubmissionHandlerTest.SubmitInvalidCert (22 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitChain
+[       OK ] CertSubmissionHandlerTest.SubmitChain (5 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitPartialChain
+[       OK ] CertSubmissionHandlerTest.SubmitPartialChain (4 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitInvalidChain
+E1124 20:06:08.140599   570 cert_checker.cc:155] Failed to check issuer chain
+[       OK ] CertSubmissionHandlerTest.SubmitInvalidChain (21 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitCertAsPreCert
+[       OK ] CertSubmissionHandlerTest.SubmitCertAsPreCert (3 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitCertChainAsPreCert
+[       OK ] CertSubmissionHandlerTest.SubmitCertChainAsPreCert (3 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitPreCertChain
+[       OK ] CertSubmissionHandlerTest.SubmitPreCertChain (4 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitPreCertChainUsingPreCA
+[       OK ] CertSubmissionHandlerTest.SubmitPreCertChainUsingPreCA (4 ms)
+[ RUN      ] CertSubmissionHandlerTest.SubmitInvalidPreCertChain
+[       OK ] CertSubmissionHandlerTest.SubmitInvalidPreCertChain (3 ms)
+[----------] 11 tests from CertSubmissionHandlerTest (96 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test case ran. (98 ms total)
+[  PASSED  ] 11 tests.
+PASS cpp/log/cert_submission_handler_test (exit status: 0)

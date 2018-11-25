@@ -1,0 +1,23 @@
+[==========] Running 7 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 7 tests from CounterTest
+[ RUN      ] CounterTest.TestCounterName
+[       OK ] CounterTest.TestCounterName (0 ms)
+[ RUN      ] CounterTest.TestCounterLabelNamesEmpty
+[       OK ] CounterTest.TestCounterLabelNamesEmpty (0 ms)
+[ RUN      ] CounterTest.TestCounterLabelNames
+[       OK ] CounterTest.TestCounterLabelNames (0 ms)
+[ RUN      ] CounterTest.TestCounterHelp
+[       OK ] CounterTest.TestCounterHelp (0 ms)
+[ RUN      ] CounterTest.TestCounter
+[       OK ] CounterTest.TestCounter (0 ms)
+[ RUN      ] CounterTest.TestCounterWithLabels
+[       OK ] CounterTest.TestCounterWithLabels (0 ms)
+[ RUN      ] CounterTest.TestCounterWithLabelsMultiValues
+[       OK ] CounterTest.TestCounterWithLabelsMultiValues (0 ms)
+[----------] 7 tests from CounterTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 7 tests.
+PASS cpp/monitoring/counter_test (exit status: 0)

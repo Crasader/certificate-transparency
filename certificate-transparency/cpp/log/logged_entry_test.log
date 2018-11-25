@@ -1,0 +1,23 @@
+[==========] Running 7 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 7 tests from LoggedTest/0, where TypeParam = cert_trans::LoggedEntry
+[ RUN      ] LoggedTest/0.NonEmptyHash
+[       OK ] LoggedTest/0.NonEmptyHash (0 ms)
+[ RUN      ] LoggedTest/0.SequenceIsPreserved
+[       OK ] LoggedTest/0.SequenceIsPreserved (0 ms)
+[ RUN      ] LoggedTest/0.SequenceIsNotPreserved
+[       OK ] LoggedTest/0.SequenceIsNotPreserved (0 ms)
+[ RUN      ] LoggedTest/0.DifferentHash
+[       OK ] LoggedTest/0.DifferentHash (1 ms)
+[ RUN      ] LoggedTest/0.SerializationPreservesHash
+[       OK ] LoggedTest/0.SerializationPreservesHash (0 ms)
+[ RUN      ] LoggedTest/0.SerializationPreservesMerkleSerialization
+[       OK ] LoggedTest/0.SerializationPreservesMerkleSerialization (0 ms)
+[ RUN      ] LoggedTest/0.DifferentMerkleSerialization
+[       OK ] LoggedTest/0.DifferentMerkleSerialization (0 ms)
+[----------] 7 tests from LoggedTest/0 (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 7 tests.
+PASS cpp/log/logged_entry_test (exit status: 0)

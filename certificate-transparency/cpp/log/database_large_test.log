@@ -1,0 +1,21 @@
+[==========] Running 3 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from LargeDBTest/0, where TypeParam = cert_trans::FileDB
+[ RUN      ] LargeDBTest/0.Benchmark
+[       OK ] LargeDBTest/0.Benchmark (2065 ms)
+[----------] 1 test from LargeDBTest/0 (2065 ms total)
+
+[----------] 1 test from LargeDBTest/1, where TypeParam = cert_trans::SQLiteDB
+[ RUN      ] LargeDBTest/1.Benchmark
+[       OK ] LargeDBTest/1.Benchmark (860 ms)
+[----------] 1 test from LargeDBTest/1 (861 ms total)
+
+[----------] 1 test from LargeDBTest/2, where TypeParam = cert_trans::LevelDB
+[ RUN      ] LargeDBTest/2.Benchmark
+[       OK ] LargeDBTest/2.Benchmark (380 ms)
+[----------] 1 test from LargeDBTest/2 (381 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 3 test cases ran. (3309 ms total)
+[  PASSED  ] 3 tests.
+PASS cpp/log/database_large_test (exit status: 0)

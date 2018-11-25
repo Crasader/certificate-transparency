@@ -1,0 +1,40 @@
+[==========] Running 14 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 7 tests from FrontendTest/0, where TypeParam = cert_trans::FileDB
+[ RUN      ] FrontendTest/0.TestSubmitValid
+[       OK ] FrontendTest/0.TestSubmitValid (49 ms)
+[ RUN      ] FrontendTest/0.TestSubmitValidWithIntermediate
+[       OK ] FrontendTest/0.TestSubmitValidWithIntermediate (31 ms)
+[ RUN      ] FrontendTest/0.TestSubmitDuplicate
+[       OK ] FrontendTest/0.TestSubmitDuplicate (23 ms)
+[ RUN      ] FrontendTest/0.TestSubmitInvalidChain
+[       OK ] FrontendTest/0.TestSubmitInvalidChain (22 ms)
+[ RUN      ] FrontendTest/0.TestSubmitInvalidPem
+[       OK ] FrontendTest/0.TestSubmitInvalidPem (20 ms)
+[ RUN      ] FrontendTest/0.TestSubmitPrecert
+[       OK ] FrontendTest/0.TestSubmitPrecert (23 ms)
+[ RUN      ] FrontendTest/0.TestSubmitPrecertUsingPreCA
+[       OK ] FrontendTest/0.TestSubmitPrecertUsingPreCA (24 ms)
+[----------] 7 tests from FrontendTest/0 (194 ms total)
+
+[----------] 7 tests from FrontendTest/1, where TypeParam = cert_trans::SQLiteDB
+[ RUN      ] FrontendTest/1.TestSubmitValid
+[       OK ] FrontendTest/1.TestSubmitValid (672 ms)
+[ RUN      ] FrontendTest/1.TestSubmitValidWithIntermediate
+[       OK ] FrontendTest/1.TestSubmitValidWithIntermediate (750 ms)
+[ RUN      ] FrontendTest/1.TestSubmitDuplicate
+[       OK ] FrontendTest/1.TestSubmitDuplicate (1092 ms)
+[ RUN      ] FrontendTest/1.TestSubmitInvalidChain
+[       OK ] FrontendTest/1.TestSubmitInvalidChain (724 ms)
+[ RUN      ] FrontendTest/1.TestSubmitInvalidPem
+[       OK ] FrontendTest/1.TestSubmitInvalidPem (780 ms)
+[ RUN      ] FrontendTest/1.TestSubmitPrecert
+[       OK ] FrontendTest/1.TestSubmitPrecert (699 ms)
+[ RUN      ] FrontendTest/1.TestSubmitPrecertUsingPreCA
+[       OK ] FrontendTest/1.TestSubmitPrecertUsingPreCA (774 ms)
+[----------] 7 tests from FrontendTest/1 (5495 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 2 test cases ran. (5689 ms total)
+[  PASSED  ] 14 tests.
+PASS cpp/log/frontend_test (exit status: 0)

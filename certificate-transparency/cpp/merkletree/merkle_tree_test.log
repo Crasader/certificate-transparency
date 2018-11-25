@@ -1,0 +1,56 @@
+[==========] Running 16 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from MerkleTreeFuzzTest
+[ RUN      ] MerkleTreeFuzzTest.RootFuzz
+[       OK ] MerkleTreeFuzzTest.RootFuzz (228 ms)
+[ RUN      ] MerkleTreeFuzzTest.PathFuzz
+[       OK ] MerkleTreeFuzzTest.PathFuzz (241 ms)
+[ RUN      ] MerkleTreeFuzzTest.ConsistencyFuzz
+[       OK ] MerkleTreeFuzzTest.ConsistencyFuzz (242 ms)
+[----------] 3 tests from MerkleTreeFuzzTest (712 ms total)
+
+[----------] 5 tests from CompactMerkleTreeTest
+[ RUN      ] CompactMerkleTreeTest.RootFuzz
+[       OK ] CompactMerkleTreeTest.RootFuzz (1943 ms)
+[ RUN      ] CompactMerkleTreeTest.RootTestVectors
+[       OK ] CompactMerkleTreeTest.RootTestVectors (0 ms)
+[ RUN      ] CompactMerkleTreeTest.TestCopyCtorWithRootTestVectors
+[       OK ] CompactMerkleTreeTest.TestCopyCtorWithRootTestVectors (0 ms)
+[ RUN      ] CompactMerkleTreeTest.TestCopyCtorThenAddLeafWithRootTestVectors
+[       OK ] CompactMerkleTreeTest.TestCopyCtorThenAddLeafWithRootTestVectors (1 ms)
+[ RUN      ] CompactMerkleTreeTest.TestCloneEmptyTreeProducesWorkingTree
+[       OK ] CompactMerkleTreeTest.TestCloneEmptyTreeProducesWorkingTree (0 ms)
+[----------] 5 tests from CompactMerkleTreeTest (1970 ms total)
+
+[----------] 4 tests from MerkleTreeTest
+[ RUN      ] MerkleTreeTest.RootTestVectors
+[       OK ] MerkleTreeTest.RootTestVectors (0 ms)
+[ RUN      ] MerkleTreeTest.PathTestVectors
+[       OK ] MerkleTreeTest.PathTestVectors (0 ms)
+[ RUN      ] MerkleTreeTest.ConsistencyTestVectors
+[       OK ] MerkleTreeTest.ConsistencyTestVectors (0 ms)
+[ RUN      ] MerkleTreeTest.AddLeafHash
+[       OK ] MerkleTreeTest.AddLeafHash (0 ms)
+[----------] 4 tests from MerkleTreeTest (1 ms total)
+
+[----------] 1 test from MutableMerkleTreeTest
+[ RUN      ] MutableMerkleTreeTest.RootTestVectors
+[       OK ] MutableMerkleTreeTest.RootTestVectors (0 ms)
+[----------] 1 test from MutableMerkleTreeTest (0 ms total)
+
+[----------] 1 test from CompactMerkleTreeFuzzTest
+[ RUN      ] CompactMerkleTreeFuzzTest.CopyCtorForLargerTreesThenAppend
+[       OK ] CompactMerkleTreeFuzzTest.CopyCtorForLargerTreesThenAppend (3546 ms)
+[----------] 1 test from CompactMerkleTreeFuzzTest (3546 ms total)
+
+[----------] 2 tests from MerkleVerifierTest
+[ RUN      ] MerkleVerifierTest.VerifyPath
+[       OK ] MerkleVerifierTest.VerifyPath (2824 ms)
+[ RUN      ] MerkleVerifierTest.VerifyConsistencyProof
+[       OK ] MerkleVerifierTest.VerifyConsistencyProof (2358 ms)
+[----------] 2 tests from MerkleVerifierTest (5183 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 6 test cases ran. (11412 ms total)
+[  PASSED  ] 16 tests.
+PASS cpp/merkletree/merkle_tree_test (exit status: 0)

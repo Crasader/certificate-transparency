@@ -1,0 +1,126 @@
+[==========] Running 51 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from DBTestDeathTest/0, where TypeParam = cert_trans::FileDB
+[ RUN      ] DBTestDeathTest/0.CannotOverwriteNodeId
+[       OK ] DBTestDeathTest/0.CannotOverwriteNodeId (443 ms)
+[ RUN      ] DBTestDeathTest/0.CannotHaveEmptyNodeId
+[       OK ] DBTestDeathTest/0.CannotHaveEmptyNodeId (339 ms)
+[----------] 2 tests from DBTestDeathTest/0 (782 ms total)
+
+[----------] 2 tests from DBTestDeathTest/1, where TypeParam = cert_trans::SQLiteDB
+[ RUN      ] DBTestDeathTest/1.CannotOverwriteNodeId
+[       OK ] DBTestDeathTest/1.CannotOverwriteNodeId (1699 ms)
+[ RUN      ] DBTestDeathTest/1.CannotHaveEmptyNodeId
+[       OK ] DBTestDeathTest/1.CannotHaveEmptyNodeId (1716 ms)
+[----------] 2 tests from DBTestDeathTest/1 (3416 ms total)
+
+[----------] 2 tests from DBTestDeathTest/2, where TypeParam = cert_trans::LevelDB
+[ RUN      ] DBTestDeathTest/2.CannotOverwriteNodeId
+[       OK ] DBTestDeathTest/2.CannotOverwriteNodeId (823 ms)
+[ RUN      ] DBTestDeathTest/2.CannotHaveEmptyNodeId
+[       OK ] DBTestDeathTest/2.CannotHaveEmptyNodeId (752 ms)
+[----------] 2 tests from DBTestDeathTest/2 (1575 ms total)
+
+[----------] 15 tests from DBTest/0, where TypeParam = cert_trans::FileDB
+[ RUN      ] DBTest/0.CreateSequenced
+[       OK ] DBTest/0.CreateSequenced (27 ms)
+[ RUN      ] DBTest/0.CreateSequencedDuplicateEntry
+[       OK ] DBTest/0.CreateSequencedDuplicateEntry (137 ms)
+[ RUN      ] DBTest/0.CreateSequencedDuplicateEntryNewSequenceNumber
+[       OK ] DBTest/0.CreateSequencedDuplicateEntryNewSequenceNumber (114 ms)
+[ RUN      ] DBTest/0.CreateSequencedDuplicateSequenceNumber
+[       OK ] DBTest/0.CreateSequencedDuplicateSequenceNumber (89 ms)
+[ RUN      ] DBTest/0.TreeSize
+[       OK ] DBTest/0.TreeSize (549 ms)
+[ RUN      ] DBTest/0.LookupBySequenceNumber
+[       OK ] DBTest/0.LookupBySequenceNumber (186 ms)
+[ RUN      ] DBTest/0.WriteTreeHead
+[       OK ] DBTest/0.WriteTreeHead (56 ms)
+[ RUN      ] DBTest/0.WriteTreeHeadDuplicateTimestamp
+[       OK ] DBTest/0.WriteTreeHeadDuplicateTimestamp (33 ms)
+[ RUN      ] DBTest/0.WriteTreeHeadNewerTimestamp
+[       OK ] DBTest/0.WriteTreeHeadNewerTimestamp (40 ms)
+[ RUN      ] DBTest/0.WriteTreeHeadOlderTimestamp
+[       OK ] DBTest/0.WriteTreeHeadOlderTimestamp (40 ms)
+[ RUN      ] DBTest/0.Resume
+[       OK ] DBTest/0.Resume (352 ms)
+[ RUN      ] DBTest/0.ResumeEmpty
+[       OK ] DBTest/0.ResumeEmpty (23 ms)
+[ RUN      ] DBTest/0.NodeId
+[       OK ] DBTest/0.NodeId (25 ms)
+[ RUN      ] DBTest/0.NoNodeIdSet
+[       OK ] DBTest/0.NoNodeIdSet (19 ms)
+[ RUN      ] DBTest/0.Iterator
+[       OK ] DBTest/0.Iterator (47 ms)
+[----------] 15 tests from DBTest/0 (1739 ms total)
+
+[----------] 15 tests from DBTest/1, where TypeParam = cert_trans::SQLiteDB
+[ RUN      ] DBTest/1.CreateSequenced
+[       OK ] DBTest/1.CreateSequenced (824 ms)
+[ RUN      ] DBTest/1.CreateSequencedDuplicateEntry
+[       OK ] DBTest/1.CreateSequencedDuplicateEntry (720 ms)
+[ RUN      ] DBTest/1.CreateSequencedDuplicateEntryNewSequenceNumber
+[       OK ] DBTest/1.CreateSequencedDuplicateEntryNewSequenceNumber (985 ms)
+[ RUN      ] DBTest/1.CreateSequencedDuplicateSequenceNumber
+[       OK ] DBTest/1.CreateSequencedDuplicateSequenceNumber (789 ms)
+[ RUN      ] DBTest/1.TreeSize
+[       OK ] DBTest/1.TreeSize (725 ms)
+[ RUN      ] DBTest/1.LookupBySequenceNumber
+[       OK ] DBTest/1.LookupBySequenceNumber (817 ms)
+[ RUN      ] DBTest/1.WriteTreeHead
+[       OK ] DBTest/1.WriteTreeHead (1056 ms)
+[ RUN      ] DBTest/1.WriteTreeHeadDuplicateTimestamp
+[       OK ] DBTest/1.WriteTreeHeadDuplicateTimestamp (804 ms)
+[ RUN      ] DBTest/1.WriteTreeHeadNewerTimestamp
+[       OK ] DBTest/1.WriteTreeHeadNewerTimestamp (1260 ms)
+[ RUN      ] DBTest/1.WriteTreeHeadOlderTimestamp
+[       OK ] DBTest/1.WriteTreeHeadOlderTimestamp (824 ms)
+[ RUN      ] DBTest/1.Resume
+[       OK ] DBTest/1.Resume (750 ms)
+[ RUN      ] DBTest/1.ResumeEmpty
+[       OK ] DBTest/1.ResumeEmpty (749 ms)
+[ RUN      ] DBTest/1.NodeId
+[       OK ] DBTest/1.NodeId (454 ms)
+[ RUN      ] DBTest/1.NoNodeIdSet
+[       OK ] DBTest/1.NoNodeIdSet (668 ms)
+[ RUN      ] DBTest/1.Iterator
+[       OK ] DBTest/1.Iterator (1036 ms)
+[----------] 15 tests from DBTest/1 (12463 ms total)
+
+[----------] 15 tests from DBTest/2, where TypeParam = cert_trans::LevelDB
+[ RUN      ] DBTest/2.CreateSequenced
+[       OK ] DBTest/2.CreateSequenced (1029 ms)
+[ RUN      ] DBTest/2.CreateSequencedDuplicateEntry
+[       OK ] DBTest/2.CreateSequencedDuplicateEntry (563 ms)
+[ RUN      ] DBTest/2.CreateSequencedDuplicateEntryNewSequenceNumber
+[       OK ] DBTest/2.CreateSequencedDuplicateEntryNewSequenceNumber (228 ms)
+[ RUN      ] DBTest/2.CreateSequencedDuplicateSequenceNumber
+[       OK ] DBTest/2.CreateSequencedDuplicateSequenceNumber (280 ms)
+[ RUN      ] DBTest/2.TreeSize
+[       OK ] DBTest/2.TreeSize (263 ms)
+[ RUN      ] DBTest/2.LookupBySequenceNumber
+[       OK ] DBTest/2.LookupBySequenceNumber (303 ms)
+[ RUN      ] DBTest/2.WriteTreeHead
+[       OK ] DBTest/2.WriteTreeHead (361 ms)
+[ RUN      ] DBTest/2.WriteTreeHeadDuplicateTimestamp
+[       OK ] DBTest/2.WriteTreeHeadDuplicateTimestamp (435 ms)
+[ RUN      ] DBTest/2.WriteTreeHeadNewerTimestamp
+[       OK ] DBTest/2.WriteTreeHeadNewerTimestamp (353 ms)
+[ RUN      ] DBTest/2.WriteTreeHeadOlderTimestamp
+[       OK ] DBTest/2.WriteTreeHeadOlderTimestamp (343 ms)
+[ RUN      ] DBTest/2.Resume
+[       OK ] DBTest/2.Resume (475 ms)
+[ RUN      ] DBTest/2.ResumeEmpty
+[       OK ] DBTest/2.ResumeEmpty (356 ms)
+[ RUN      ] DBTest/2.NodeId
+[       OK ] DBTest/2.NodeId (300 ms)
+[ RUN      ] DBTest/2.NoNodeIdSet
+[       OK ] DBTest/2.NoNodeIdSet (221 ms)
+[ RUN      ] DBTest/2.Iterator
+[       OK ] DBTest/2.Iterator (295 ms)
+[----------] 15 tests from DBTest/2 (5809 ms total)
+
+[----------] Global test environment tear-down
+[==========] 51 tests from 6 test cases ran. (25785 ms total)
+[  PASSED  ] 51 tests.
+PASS cpp/log/database_test (exit status: 0)

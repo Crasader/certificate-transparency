@@ -1,0 +1,40 @@
+[==========] Running 14 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 7 tests from FrontendSignerTest/0, where TypeParam = cert_trans::FileDB
+[ RUN      ] FrontendSignerTest/0.LogKatTest
+[       OK ] FrontendSignerTest/0.LogKatTest (188 ms)
+[ RUN      ] FrontendSignerTest/0.Log
+[       OK ] FrontendSignerTest/0.Log (33 ms)
+[ RUN      ] FrontendSignerTest/0.Time
+[       OK ] FrontendSignerTest/0.Time (21 ms)
+[ RUN      ] FrontendSignerTest/0.LogDuplicates
+[       OK ] FrontendSignerTest/0.LogDuplicates (25 ms)
+[ RUN      ] FrontendSignerTest/0.LogDuplicatesDifferentChain
+[       OK ] FrontendSignerTest/0.LogDuplicatesDifferentChain (30 ms)
+[ RUN      ] FrontendSignerTest/0.Verify
+[       OK ] FrontendSignerTest/0.Verify (23 ms)
+[ RUN      ] FrontendSignerTest/0.TimedVerify
+[       OK ] FrontendSignerTest/0.TimedVerify (26 ms)
+[----------] 7 tests from FrontendSignerTest/0 (346 ms total)
+
+[----------] 7 tests from FrontendSignerTest/1, where TypeParam = cert_trans::SQLiteDB
+[ RUN      ] FrontendSignerTest/1.LogKatTest
+[       OK ] FrontendSignerTest/1.LogKatTest (718 ms)
+[ RUN      ] FrontendSignerTest/1.Log
+[       OK ] FrontendSignerTest/1.Log (734 ms)
+[ RUN      ] FrontendSignerTest/1.Time
+[       OK ] FrontendSignerTest/1.Time (781 ms)
+[ RUN      ] FrontendSignerTest/1.LogDuplicates
+[       OK ] FrontendSignerTest/1.LogDuplicates (904 ms)
+[ RUN      ] FrontendSignerTest/1.LogDuplicatesDifferentChain
+[       OK ] FrontendSignerTest/1.LogDuplicatesDifferentChain (827 ms)
+[ RUN      ] FrontendSignerTest/1.Verify
+[       OK ] FrontendSignerTest/1.Verify (797 ms)
+[ RUN      ] FrontendSignerTest/1.TimedVerify
+[       OK ] FrontendSignerTest/1.TimedVerify (790 ms)
+[----------] 7 tests from FrontendSignerTest/1 (5555 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 2 test cases ran. (5903 ms total)
+[  PASSED  ] 14 tests.
+PASS cpp/log/frontend_signer_test (exit status: 0)

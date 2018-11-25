@@ -1,0 +1,10 @@
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/edit_cache.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/install/strip.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/install/local.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/gflags-static.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/install.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/list_install_components.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/gflags.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/gflags_nothreads-static.dir
+/mnt/c/Github/metal/ct/gflags/build/CMakeFiles/gflags_nothreads.dir

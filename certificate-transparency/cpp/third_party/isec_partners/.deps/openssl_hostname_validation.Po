@@ -1,0 +1,258 @@
+cpp/third_party/isec_partners/openssl_hostname_validation.o: \
+  cpp/third_party/isec_partners/openssl_hostname_validation.c \
+  /mnt/c/Github/metal/ct/install/include/openssl/x509v3.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/bio.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/e_os2.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/opensslconf.h \
+  /usr/include/stdio.h /usr/include/features.h \
+  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/stddef.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
+  /usr/include/_G_config.h /usr/include/wchar.h \
+  /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/crypto.h \
+  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/sigset.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
+  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/stack.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/safestack.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/opensslv.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/ossl_typ.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/symhacks.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/x509.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/buffer.h \
+  /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/__stddef_max_align_t.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/evp.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/objects.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/obj_mac.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/asn1.h \
+  /usr/include/xlocale.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/bn.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/ec.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/ecdsa.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/ecdh.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/rsa.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/dsa.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/dh.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/sha.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/x509_vfy.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/lhash.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/pkcs7.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/conf.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/ssl.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/comp.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/pem.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/pem2.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/hmac.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/kssl.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/ssl2.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/ssl3.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/tls1.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/dtls1.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/pqueue.h \
+  /usr/include/string.h /usr/include/x86_64-linux-gnu/bits/string.h \
+  /usr/include/x86_64-linux-gnu/bits/string2.h \
+  /usr/include/x86_64-linux-gnu/bits/string3.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/ssl23.h \
+  /mnt/c/Github/metal/ct/install/include/openssl/srtp.h \
+  cpp/third_party/curl/hostcheck.h \
+  cpp/third_party/isec_partners/openssl_hostname_validation.h
+
+/mnt/c/Github/metal/ct/install/include/openssl/x509v3.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/bio.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/e_os2.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/opensslconf.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/crypto.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigset.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/stack.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/safestack.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/opensslv.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/ossl_typ.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/symhacks.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/x509.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/buffer.h:
+
+/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/__stddef_max_align_t.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/evp.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/objects.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/obj_mac.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/asn1.h:
+
+/usr/include/xlocale.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/bn.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/ec.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/ecdsa.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/ecdh.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/rsa.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/dsa.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/dh.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/sha.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/x509_vfy.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/lhash.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/pkcs7.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/conf.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/ssl.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/comp.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/pem.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/pem2.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/hmac.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/kssl.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/ssl2.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/ssl3.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/tls1.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/dtls1.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/pqueue.h:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:
+
+/usr/include/x86_64-linux-gnu/sys/time.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/ssl23.h:
+
+/mnt/c/Github/metal/ct/install/include/openssl/srtp.h:
+
+cpp/third_party/curl/hostcheck.h:
+
+cpp/third_party/isec_partners/openssl_hostname_validation.h:

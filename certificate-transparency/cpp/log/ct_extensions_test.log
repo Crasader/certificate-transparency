@@ -1,0 +1,17 @@
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from CtExtensionsTest
+[ RUN      ] CtExtensionsTest.TestSCTExtension
+[       OK ] CtExtensionsTest.TestSCTExtension (7 ms)
+[ RUN      ] CtExtensionsTest.TestEmbeddedSCTExtension
+[       OK ] CtExtensionsTest.TestEmbeddedSCTExtension (3 ms)
+[ RUN      ] CtExtensionsTest.TestPoisonExtension
+[       OK ] CtExtensionsTest.TestPoisonExtension (5 ms)
+[ RUN      ] CtExtensionsTest.TestPrecertSigning
+[       OK ] CtExtensionsTest.TestPrecertSigning (4 ms)
+[----------] 4 tests from CtExtensionsTest (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (21 ms total)
+[  PASSED  ] 4 tests.
+PASS cpp/log/ct_extensions_test (exit status: 0)

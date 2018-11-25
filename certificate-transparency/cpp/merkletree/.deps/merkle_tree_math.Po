@@ -1,0 +1,10 @@
+cpp/merkletree/merkle_tree_math.o: cpp/merkletree/merkle_tree_math.cc \
+  cpp/merkletree/merkle_tree_math.h \
+  /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/stddef.h \
+  /usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/__stddef_max_align_t.h
+
+cpp/merkletree/merkle_tree_math.h:
+
+/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/stddef.h:
+
+/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include/__stddef_max_align_t.h:

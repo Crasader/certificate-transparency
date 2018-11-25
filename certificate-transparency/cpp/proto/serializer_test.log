@@ -1,0 +1,149 @@
+[==========] Running 67 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 48 tests from SerializerTestV1
+[ RUN      ] SerializerTestV1.SerializeDigitallySignedKatTest
+[       OK ] SerializerTestV1.SerializeDigitallySignedKatTest (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTKatTest
+[       OK ] SerializerTestV1.SerializeSCTKatTest (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTListKatTest
+[       OK ] SerializerTestV1.SerializeSCTListKatTest (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTListKatTest
+[       OK ] SerializerTestV1.DeserializeSCTListKatTest (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTSignatureInputKatTestV1
+[       OK ] SerializerTestV1.SerializeSCTSignatureInputKatTestV1 (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTMerkleTreeLeafKatTestV1
+[       OK ] SerializerTestV1.SerializeSCTMerkleTreeLeafKatTestV1 (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeMerkleTreeLeafKATV1Cert
+[       OK ] SerializerTestV1.DeserializeMerkleTreeLeafKATV1Cert (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeMerkleTreeLeafKATV1Precert
+[       OK ] SerializerTestV1.DeserializeMerkleTreeLeafKATV1Precert (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTKatTestV1
+[       OK ] SerializerTestV1.DeserializeSCTKatTestV1 (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeDigitallySignedKatTest
+[       OK ] SerializerTestV1.DeserializeDigitallySignedKatTest (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializeSCTChangeHashAlgorithm
+[       OK ] SerializerTestV1.SerializeDeserializeSCTChangeHashAlgorithm (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializeSCTChangeSignature
+[       OK ] SerializerTestV1.SerializeDeserializeSCTChangeSignature (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTSignatureInputEmptyCertificate
+[       OK ] SerializerTestV1.SerializeSCTSignatureInputEmptyCertificate (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTMerkleTreeLeafEmptyCertificate
+[       OK ] SerializerTestV1.SerializeSCTMerkleTreeLeafEmptyCertificate (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTSignatureInputEmptyTbsCertificate
+[       OK ] SerializerTestV1.SerializeSCTSignatureInputEmptyTbsCertificate (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTMerkleTreeLeafEmptyTbsCertificate
+[       OK ] SerializerTestV1.SerializeSCTMerkleTreeLeafEmptyTbsCertificate (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTSignatureInputInvalidIssuerKeyHash
+[       OK ] SerializerTestV1.SerializeSCTSignatureInputInvalidIssuerKeyHash (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTMerkleTreeLeafInvalidIssuerKeyHash
+[       OK ] SerializerTestV1.SerializeSCTMerkleTreeLeafInvalidIssuerKeyHash (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTBadHashType
+[       OK ] SerializerTestV1.DeserializeSCTBadHashType (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTBadSignatureType
+[       OK ] SerializerTestV1.DeserializeSCTBadSignatureType (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTTooShort
+[       OK ] SerializerTestV1.DeserializeSCTTooShort (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTTooLong
+[       OK ] SerializerTestV1.DeserializeSCTTooLong (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSTHSignatureInputKatTestV1
+[       OK ] SerializerTestV1.SerializeSTHSignatureInputKatTestV1 (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSTHSignatureInputBadHashV1
+[       OK ] SerializerTestV1.SerializeSTHSignatureInputBadHashV1 (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTWithExtensionsTestV1
+[       OK ] SerializerTestV1.SerializeSCTWithExtensionsTestV1 (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTSignatureInputWithExtensionsTestV1
+[       OK ] SerializerTestV1.SerializeSCTSignatureInputWithExtensionsTestV1 (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTMerkleTreeLeafWithExtensionsTestV1
+[       OK ] SerializerTestV1.SerializeSCTMerkleTreeLeafWithExtensionsTestV1 (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializeSCTAddExtensionsV1
+[       OK ] SerializerTestV1.SerializeDeserializeSCTAddExtensionsV1 (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTUnsupportedVersion
+[       OK ] SerializerTestV1.SerializeSCTUnsupportedVersion (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTSignatureInputUnsupportedVersion
+[       OK ] SerializerTestV1.SerializeSCTSignatureInputUnsupportedVersion (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTMerkleTreeLeafUnsupportedVersion
+[       OK ] SerializerTestV1.SerializeSCTMerkleTreeLeafUnsupportedVersion (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSTHSignatureInputUnsupportedVersion
+[       OK ] SerializerTestV1.SerializeSTHSignatureInputUnsupportedVersion (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTUnsupportedVersion
+[       OK ] SerializerTestV1.DeserializeSCTUnsupportedVersion (0 ms)
+[ RUN      ] SerializerTestV1.SerializeEmptySCTList
+[       OK ] SerializerTestV1.SerializeEmptySCTList (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeEmptySCTList
+[       OK ] SerializerTestV1.DeserializeEmptySCTList (0 ms)
+[ RUN      ] SerializerTestV1.SerializeSCTListEmptySCTInList
+[       OK ] SerializerTestV1.SerializeSCTListEmptySCTInList (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTListEmptySCTInList
+[       OK ] SerializerTestV1.DeserializeSCTListEmptySCTInList (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializeMultiSCTList
+[       OK ] SerializerTestV1.SerializeDeserializeMultiSCTList (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTListTooLong
+[       OK ] SerializerTestV1.DeserializeSCTListTooLong (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTListTooShort
+[       OK ] SerializerTestV1.DeserializeSCTListTooShort (0 ms)
+[ RUN      ] SerializerTestV1.DeserializeSCTListInvalidList
+[       OK ] SerializerTestV1.DeserializeSCTListInvalidList (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializeX509Chain
+[       OK ] SerializerTestV1.SerializeDeserializeX509Chain (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializeX509Chain_EmptyChain
+[       OK ] SerializerTestV1.SerializeDeserializeX509Chain_EmptyChain (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializeX509Chain_EmptyCert
+[       OK ] SerializerTestV1.SerializeDeserializeX509Chain_EmptyCert (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializePrecertChainEntry
+[       OK ] SerializerTestV1.SerializeDeserializePrecertChainEntry (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyPrecert
+[       OK ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyPrecert (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyChain
+[       OK ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyChain (0 ms)
+[ RUN      ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyChainCert
+[       OK ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyChainCert (0 ms)
+[----------] 48 tests from SerializerTestV1 (26 ms total)
+
+[----------] 15 tests from SerializerTestV2
+[ RUN      ] SerializerTestV2.SerializeSCTSignatureInputKatTestV2
+[       OK ] SerializerTestV2.SerializeSCTSignatureInputKatTestV2 (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSCTMerkleTreeLeafKatTestV2
+[       OK ] SerializerTestV2.SerializeSCTMerkleTreeLeafKatTestV2 (0 ms)
+[ RUN      ] SerializerTestV2.DeserializeMerkleTreeLeafKATV2Cert
+[       OK ] SerializerTestV2.DeserializeMerkleTreeLeafKATV2Cert (0 ms)
+[ RUN      ] SerializerTestV2.DeserializeMerkleTreeLeafKATV2Precert
+[       OK ] SerializerTestV2.DeserializeMerkleTreeLeafKATV2Precert (0 ms)
+[ RUN      ] SerializerTestV2.DeserializeSCTKatTestV2
+[       OK ] SerializerTestV2.DeserializeSCTKatTestV2 (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSTHSignatureInputKatTestV2
+[       OK ] SerializerTestV2.SerializeSTHSignatureInputKatTestV2 (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSTHSignatureInputKatTestV2InvalidLogId
+[       OK ] SerializerTestV2.SerializeSTHSignatureInputKatTestV2InvalidLogId (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSTHSignatureInputKatTestV2WithExtensions
+[       OK ] SerializerTestV2.SerializeSTHSignatureInputKatTestV2WithExtensions (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSTHSignatureInputBadHashV2
+[       OK ] SerializerTestV2.SerializeSTHSignatureInputBadHashV2 (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSTHSignatureInputExtBadOrderV2
+[       OK ] SerializerTestV2.SerializeSTHSignatureInputExtBadOrderV2 (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSCTWithExtensionsTestV2
+[       OK ] SerializerTestV2.SerializeSCTWithExtensionsTestV2 (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSCTWithExtensionsTestV2BadOrder
+[       OK ] SerializerTestV2.SerializeSCTWithExtensionsTestV2BadOrder (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSCTSignatureInputWithExtensionsTestV2
+[       OK ] SerializerTestV2.SerializeSCTSignatureInputWithExtensionsTestV2 (0 ms)
+[ RUN      ] SerializerTestV2.SerializeSCTMerkleTreeLeafWithExtensionsTestV2
+[       OK ] SerializerTestV2.SerializeSCTMerkleTreeLeafWithExtensionsTestV2 (0 ms)
+[ RUN      ] SerializerTestV2.SerializeDeserializeSCTAddExtensionsV2
+[       OK ] SerializerTestV2.SerializeDeserializeSCTAddExtensionsV2 (1 ms)
+[----------] 15 tests from SerializerTestV2 (1 ms total)
+
+[----------] 4 tests from SerializerTest
+[ RUN      ] SerializerTest.SerializeSCTSignedEntryWithType_KatTest
+[       OK ] SerializerTest.SerializeSCTSignedEntryWithType_KatTest (0 ms)
+[ RUN      ] SerializerTest.SerializeSCTSignedEntryWithType_EmptyCertificate
+[       OK ] SerializerTest.SerializeSCTSignedEntryWithType_EmptyCertificate (0 ms)
+[ RUN      ] SerializerTest.SerializeSCTSignedEntryWithType_EmptyTbsCertificate
+[       OK ] SerializerTest.SerializeSCTSignedEntryWithType_EmptyTbsCertificate (0 ms)
+[ RUN      ] SerializerTest.SerializeSCTSignedEntryWithType_BadIssuerKeyHash
+[       OK ] SerializerTest.SerializeSCTSignedEntryWithType_BadIssuerKeyHash (0 ms)
+[----------] 4 tests from SerializerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 67 tests from 3 test cases ran. (27 ms total)
+[  PASSED  ] 67 tests.
+PASS cpp/proto/serializer_test (exit status: 0)

@@ -1,0 +1,32 @@
+[==========] Running 10 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 5 tests from LogLookupTest/0, where TypeParam = cert_trans::FileDB
+[ RUN      ] LogLookupTest/0.Lookup
+[       OK ] LogLookupTest/0.Lookup (76 ms)
+[ RUN      ] LogLookupTest/0.NotFound
+[       OK ] LogLookupTest/0.NotFound (47 ms)
+[ RUN      ] LogLookupTest/0.Update
+[       OK ] LogLookupTest/0.Update (44 ms)
+[ RUN      ] LogLookupTest/0.Verify
+[       OK ] LogLookupTest/0.Verify (46 ms)
+[ RUN      ] LogLookupTest/0.VerifyWithPath
+[       OK ] LogLookupTest/0.VerifyWithPath (173 ms)
+[----------] 5 tests from LogLookupTest/0 (386 ms total)
+
+[----------] 5 tests from LogLookupTest/1, where TypeParam = cert_trans::SQLiteDB
+[ RUN      ] LogLookupTest/1.Lookup
+[       OK ] LogLookupTest/1.Lookup (897 ms)
+[ RUN      ] LogLookupTest/1.NotFound
+[       OK ] LogLookupTest/1.NotFound (1075 ms)
+[ RUN      ] LogLookupTest/1.Update
+[       OK ] LogLookupTest/1.Update (944 ms)
+[ RUN      ] LogLookupTest/1.Verify
+[       OK ] LogLookupTest/1.Verify (853 ms)
+[ RUN      ] LogLookupTest/1.VerifyWithPath
+[       OK ] LogLookupTest/1.VerifyWithPath (982 ms)
+[----------] 5 tests from LogLookupTest/1 (4752 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 2 test cases ran. (5138 ms total)
+[  PASSED  ] 10 tests.
+PASS cpp/log/log_lookup_test (exit status: 0)

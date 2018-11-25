@@ -1,0 +1,57 @@
+[==========] Running 24 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 24 tests from FakeEtcdTest
+[ RUN      ] FakeEtcdTest.Create
+[       OK ] FakeEtcdTest.Create (26 ms)
+[ RUN      ] FakeEtcdTest.CreateFailsIfExists
+[       OK ] FakeEtcdTest.CreateFailsIfExists (3 ms)
+[ RUN      ] FakeEtcdTest.Update
+[       OK ] FakeEtcdTest.Update (4 ms)
+[ RUN      ] FakeEtcdTest.UpdateFailsWithIncorrectPreviousIndex
+[       OK ] FakeEtcdTest.UpdateFailsWithIncorrectPreviousIndex (4 ms)
+[ RUN      ] FakeEtcdTest.CreateWithTTLExpires
+[       OK ] FakeEtcdTest.CreateWithTTLExpires (4004 ms)
+[ RUN      ] FakeEtcdTest.UpdateWithTTLExpires
+[       OK ] FakeEtcdTest.UpdateWithTTLExpires (4006 ms)
+[ RUN      ] FakeEtcdTest.ForceSet
+[       OK ] FakeEtcdTest.ForceSet (12 ms)
+[ RUN      ] FakeEtcdTest.ForceSetWithTTLExpires
+[       OK ] FakeEtcdTest.ForceSetWithTTLExpires (4016 ms)
+[ RUN      ] FakeEtcdTest.DeleteNonExistent
+[       OK ] FakeEtcdTest.DeleteNonExistent (14 ms)
+[ RUN      ] FakeEtcdTest.DeleteIncorrectIndex
+[       OK ] FakeEtcdTest.DeleteIncorrectIndex (12 ms)
+[ RUN      ] FakeEtcdTest.Delete
+[       OK ] FakeEtcdTest.Delete (3 ms)
+[ RUN      ] FakeEtcdTest.WatcherForExecutor
+[       OK ] FakeEtcdTest.WatcherForExecutor (2 ms)
+[ RUN      ] FakeEtcdTest.WatcherForCreate
+[       OK ] FakeEtcdTest.WatcherForCreate (3 ms)
+[ RUN      ] FakeEtcdTest.WatcherForDelete
+[       OK ] FakeEtcdTest.WatcherForDelete (1 ms)
+[ RUN      ] FakeEtcdTest.WatcherWithTTLExpires
+[       OK ] FakeEtcdTest.WatcherWithTTLExpires (3007 ms)
+[ RUN      ] FakeEtcdTest.PutUnderNonDir
+[       OK ] FakeEtcdTest.PutUnderNonDir (9 ms)
+[ RUN      ] FakeEtcdTest.GetDir
+[       OK ] FakeEtcdTest.GetDir (13 ms)
+[ RUN      ] FakeEtcdTest.GetDirRecursive
+[       OK ] FakeEtcdTest.GetDirRecursive (10 ms)
+[ RUN      ] FakeEtcdTest.GetWaitOldIndex
+[       OK ] FakeEtcdTest.GetWaitOldIndex (12 ms)
+[ RUN      ] FakeEtcdTest.GetWaitNonExistent
+[       OK ] FakeEtcdTest.GetWaitNonExistent (1014 ms)
+[ RUN      ] FakeEtcdTest.GetWaitUpdateExisting
+[       OK ] FakeEtcdTest.GetWaitUpdateExisting (1004 ms)
+[ RUN      ] FakeEtcdTest.GetWaitSetExisting
+[       OK ] FakeEtcdTest.GetWaitSetExisting (1005 ms)
+[ RUN      ] FakeEtcdTest.GetWaitDeleteExisting
+[       OK ] FakeEtcdTest.GetWaitDeleteExisting (1006 ms)
+[ RUN      ] FakeEtcdTest.GetWaitRecursive
+[       OK ] FakeEtcdTest.GetWaitRecursive (2015 ms)
+[----------] 24 tests from FakeEtcdTest (21207 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 1 test case ran. (21208 ms total)
+[  PASSED  ] 24 tests.
+PASS cpp/util/fake_etcd_test (exit status: 0)

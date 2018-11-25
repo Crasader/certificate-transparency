@@ -1,0 +1,99 @@
+[==========] Running 12 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from DeathTest
+[ RUN      ] DeathTest.SupportDeath
+[       OK ] DeathTest.SupportDeath (0 ms)
+[----------] 1 test from DeathTest (0 ms total)
+
+[----------] 4 tests from FailingFileStorageDeathTest
+[ RUN      ] FailingFileStorageDeathTest.DieOnFailedCreate
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] FailingFileStorageDeathTest.DieOnFailedCreate (1783 ms)
+[ RUN      ] FailingFileStorageDeathTest.DieOnFailedUpdate
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] FailingFileStorageDeathTest.DieOnFailedUpdate (577 ms)
+[ RUN      ] FailingFileStorageDeathTest.ResumeOnFailedCreate
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] FailingFileStorageDeathTest.ResumeOnFailedCreate (1559 ms)
+[ RUN      ] FailingFileStorageDeathTest.ResumeOnFailedUpdate
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] FailingFileStorageDeathTest.ResumeOnFailedUpdate (743 ms)
+[----------] 4 tests from FailingFileStorageDeathTest (4662 ms total)
+
+[----------] 7 tests from BasicFileStorageTest
+[ RUN      ] BasicFileStorageTest.Create
+[       OK ] BasicFileStorageTest.Create (23 ms)
+[ RUN      ] BasicFileStorageTest.Scan
+[       OK ] BasicFileStorageTest.Scan (24 ms)
+[ RUN      ] BasicFileStorageTest.CreateDuplicate
+[       OK ] BasicFileStorageTest.CreateDuplicate (19 ms)
+[ RUN      ] BasicFileStorageTest.Update
+[       OK ] BasicFileStorageTest.Update (26 ms)
+[ RUN      ] BasicFileStorageTest.LookupInvalidKey
+[       OK ] BasicFileStorageTest.LookupInvalidKey (18 ms)
+[ RUN      ] BasicFileStorageTest.Resume
+[       OK ] BasicFileStorageTest.Resume (20 ms)
+[ RUN      ] BasicFileStorageTest.ScanOnResume
+[       OK ] BasicFileStorageTest.ScanOnResume (21 ms)
+[----------] 7 tests from BasicFileStorageTest (152 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 3 test cases ran. (4814 ms total)
+[  PASSED  ] 12 tests.
+PASS cpp/log/file_storage_test (exit status: 0)

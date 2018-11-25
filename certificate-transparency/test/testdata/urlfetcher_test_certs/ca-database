@@ -1,0 +1,8 @@
+V	220601000000Z		01	unknown	/C=GB/O=Certificate Transparency CA/ST=Wales/L=Erw Wen
+V	220601000000Z		02	unknown	/C=GB/O=Certificate Transparency PreCA/ST=Wales/L=Erw Wen
+V	220601000000Z		03	unknown	/C=GB/O=Certificate Transparency/ST=Wales/L=Erw Wen/CN=not-localhost
+V	220601000000Z		04	unknown	/C=GB/O=Certificate Transparency/ST=Wales/L=Erw Wen/CN=localhost
+V	220601000000Z		05	unknown	/C=GB/O=Certificate Transparency/ST=Wales/L=Erw Wen/CN=binky.example.com
+V	220601000000Z		06	unknown	/C=GB/O=Certificate Transparency/ST=Wales/L=Erw Wen/CN=*.example.com
+V	220601000000Z		07	unknown	/C=GB/O=Certificate Transparency/ST=Wales/L=Erw Wen/CN=example.com
+V	220601000000Z		08	unknown	/C=GB/O=Certificate Transparency/ST=Wales/L=Erw Wen/CN=127.0.0.1

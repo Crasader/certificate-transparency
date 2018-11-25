@@ -1,0 +1,44 @@
+[==========] Running 16 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 8 tests from TreeSignerTest/0, where TypeParam = cert_trans::FileDB
+[ RUN      ] TreeSignerTest/0.PendingEntriesOrder
+[       OK ] TreeSignerTest/0.PendingEntriesOrder (39 ms)
+[ RUN      ] TreeSignerTest/0.Sign
+[       OK ] TreeSignerTest/0.Sign (31 ms)
+[ RUN      ] TreeSignerTest/0.Timestamp
+[       OK ] TreeSignerTest/0.Timestamp (39 ms)
+[ RUN      ] TreeSignerTest/0.Verify
+[       OK ] TreeSignerTest/0.Verify (30 ms)
+[ RUN      ] TreeSignerTest/0.ResumeClean
+[       OK ] TreeSignerTest/0.ResumeClean (31 ms)
+[ RUN      ] TreeSignerTest/0.ResumePartialSign
+[       OK ] TreeSignerTest/0.ResumePartialSign (30 ms)
+[ RUN      ] TreeSignerTest/0.SignEmpty
+[       OK ] TreeSignerTest/0.SignEmpty (20 ms)
+[ RUN      ] TreeSignerTest/0.SequenceNewEntriesCleansUpOldSequenceMappings
+[       OK ] TreeSignerTest/0.SequenceNewEntriesCleansUpOldSequenceMappings (1085 ms)
+[----------] 8 tests from TreeSignerTest/0 (1305 ms total)
+
+[----------] 8 tests from TreeSignerTest/1, where TypeParam = cert_trans::SQLiteDB
+[ RUN      ] TreeSignerTest/1.PendingEntriesOrder
+[       OK ] TreeSignerTest/1.PendingEntriesOrder (788 ms)
+[ RUN      ] TreeSignerTest/1.Sign
+[       OK ] TreeSignerTest/1.Sign (812 ms)
+[ RUN      ] TreeSignerTest/1.Timestamp
+[       OK ] TreeSignerTest/1.Timestamp (942 ms)
+[ RUN      ] TreeSignerTest/1.Verify
+[       OK ] TreeSignerTest/1.Verify (745 ms)
+[ RUN      ] TreeSignerTest/1.ResumeClean
+[       OK ] TreeSignerTest/1.ResumeClean (918 ms)
+[ RUN      ] TreeSignerTest/1.ResumePartialSign
+[       OK ] TreeSignerTest/1.ResumePartialSign (687 ms)
+[ RUN      ] TreeSignerTest/1.SignEmpty
+[       OK ] TreeSignerTest/1.SignEmpty (762 ms)
+[ RUN      ] TreeSignerTest/1.SequenceNewEntriesCleansUpOldSequenceMappings
+[       OK ] TreeSignerTest/1.SequenceNewEntriesCleansUpOldSequenceMappings (2004 ms)
+[----------] 8 tests from TreeSignerTest/1 (7660 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 2 test cases ran. (8966 ms total)
+[  PASSED  ] 16 tests.
+PASS cpp/log/tree_signer_test (exit status: 0)

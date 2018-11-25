@@ -1,0 +1,34 @@
+[==========] Running 8 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from EtcdDeleteDeathTest
+[ RUN      ] EtcdDeleteDeathTest.ConcurrencyTooLow
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeleteDeathTest.ConcurrencyTooLow (93 ms)
+[ RUN      ] EtcdDeleteDeathTest.NoClient
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeleteDeathTest.NoClient (86 ms)
+[ RUN      ] EtcdDeleteDeathTest.NoTask
+
+[WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] EtcdDeleteDeathTest.NoTask (82 ms)
+[----------] 3 tests from EtcdDeleteDeathTest (261 ms total)
+
+[----------] 5 tests from EtcdDeleteTest
+[ RUN      ] EtcdDeleteTest.NothingToDo
+[       OK ] EtcdDeleteTest.NothingToDo (0 ms)
+[ RUN      ] EtcdDeleteTest.AlreadyCancelled
+[       OK ] EtcdDeleteTest.AlreadyCancelled (1 ms)
+[ RUN      ] EtcdDeleteTest.CancelDuring
+[       OK ] EtcdDeleteTest.CancelDuring (0 ms)
+[ RUN      ] EtcdDeleteTest.WithinConcurrency
+[       OK ] EtcdDeleteTest.WithinConcurrency (1 ms)
+[ RUN      ] EtcdDeleteTest.ErrorHandling
+[       OK ] EtcdDeleteTest.ErrorHandling (0 ms)
+[----------] 5 tests from EtcdDeleteTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 2 test cases ran. (264 ms total)
+[  PASSED  ] 8 tests.
+PASS cpp/util/etcd_delete_test (exit status: 0)

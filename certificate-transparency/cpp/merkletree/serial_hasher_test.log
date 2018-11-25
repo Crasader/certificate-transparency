@@ -1,0 +1,20 @@
+[==========] Running 4 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from SerialHasherTest/0, where TypeParam = Sha256Hasher
+[ RUN      ] SerialHasherTest/0.TestVectors
+[       OK ] SerialHasherTest/0.TestVectors (0 ms)
+[ RUN      ] SerialHasherTest/0.Update
+[       OK ] SerialHasherTest/0.Update (0 ms)
+[ RUN      ] SerialHasherTest/0.Create
+[       OK ] SerialHasherTest/0.Create (0 ms)
+[----------] 3 tests from SerialHasherTest/0 (0 ms total)
+
+[----------] 1 test from Sha256Test
+[ RUN      ] Sha256Test.StaticDigest
+[       OK ] Sha256Test.StaticDigest (0 ms)
+[----------] 1 test from Sha256Test (13 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 2 test cases ran. (13 ms total)
+[  PASSED  ] 4 tests.
+PASS cpp/merkletree/serial_hasher_test (exit status: 0)

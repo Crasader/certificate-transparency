@@ -1,0 +1,13 @@
+prefix=/mnt/c/Github/metal/ct/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: ldns
+Description: Library for DNS programming
+URL: http://www.nlnetlabs.nl/projects/ldns
+Version: 1.6.17
+Requires: 
+Libs: -L${libdir} -lldns
+Libs.private: -L/mnt/c/Github/metal/ct/install/lib
+Cflags: -I${includedir} 

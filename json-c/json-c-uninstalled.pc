@@ -1,0 +1,11 @@
+prefix=
+exec_prefix=
+libdir=/mnt/c/Github/metal/ct/json-c
+includedir=/mnt/c/Github/metal/ct/json-c
+
+Name: json
+Description: JSON implementation in C
+Version: 0.12
+Requires:
+Libs:  -L/mnt/c/Github/metal/ct/json-c -ljson-c
+Cflags: -I/mnt/c/Github/metal/ct/json-c

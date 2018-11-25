@@ -1,0 +1,3 @@
+cpp/version.o: cpp/version.cc cpp/version.h
+
+cpp/version.h:

@@ -1,0 +1,17 @@
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from ProxyTest
+[ RUN      ] ProxyTest.TestFilterHeadersLeavesUnrelatedHeadersAlone
+[       OK ] ProxyTest.TestFilterHeadersLeavesUnrelatedHeadersAlone (0 ms)
+[ RUN      ] ProxyTest.TestFilterHeadersRemovesReferencedHeaders
+[       OK ] ProxyTest.TestFilterHeadersRemovesReferencedHeaders (0 ms)
+[ RUN      ] ProxyTest.TestFilterHeadersHandlesMultipleReferencedHeaders
+[       OK ] ProxyTest.TestFilterHeadersHandlesMultipleReferencedHeaders (0 ms)
+[ RUN      ] ProxyTest.TestFilterHeadersHandlesMultipleConnectionHeaders
+[       OK ] ProxyTest.TestFilterHeadersHandlesMultipleConnectionHeaders (0 ms)
+[----------] 4 tests from ProxyTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 4 tests.
+PASS cpp/server/proxy_test (exit status: 0)

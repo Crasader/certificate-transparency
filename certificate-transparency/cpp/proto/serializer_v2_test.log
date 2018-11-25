@@ -1,0 +1,15 @@
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from SerializerV2Test
+[ RUN      ] SerializerV2Test.SerializesSimpleOID
+[       OK ] SerializerV2Test.SerializesSimpleOID (0 ms)
+[ RUN      ] SerializerV2Test.FailsOnInvalidOID
+[       OK ] SerializerV2Test.FailsOnInvalidOID (0 ms)
+[ RUN      ] SerializerV2Test.CreatesFromTagMissingDER
+[       OK ] SerializerV2Test.CreatesFromTagMissingDER (0 ms)
+[----------] 3 tests from SerializerV2Test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 3 tests.
+PASS cpp/proto/serializer_v2_test (exit status: 0)
