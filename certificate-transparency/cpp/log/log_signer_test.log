@@ -2,7 +2,7 @@
 [----------] Global test environment set-up.
 [----------] 32 tests from LogSignerTest
 [ RUN      ] LogSignerTest.KeyIDKatTest
-[       OK ] LogSignerTest.KeyIDKatTest (1 ms)
+[       OK ] LogSignerTest.KeyIDKatTest (0 ms)
 [ RUN      ] LogSignerTest.VerifyCertSCTKatTest
 [       OK ] LogSignerTest.VerifyCertSCTKatTest (1 ms)
 [ RUN      ] LogSignerTest.VerifyPrecertSCTKatTest
@@ -10,21 +10,21 @@
 [ RUN      ] LogSignerTest.VerifySTHKatTest
 [       OK ] LogSignerTest.VerifySTHKatTest (1 ms)
 [ RUN      ] LogSignerTest.SignAndVerifyCertSCT
-[       OK ] LogSignerTest.SignAndVerifyCertSCT (1 ms)
+[       OK ] LogSignerTest.SignAndVerifyCertSCT (0 ms)
 [ RUN      ] LogSignerTest.SignAndVerifyPrecertSCT
-[       OK ] LogSignerTest.SignAndVerifyPrecertSCT (1 ms)
+[       OK ] LogSignerTest.SignAndVerifyPrecertSCT (0 ms)
 [ RUN      ] LogSignerTest.SignAndVerifySTH
 [       OK ] LogSignerTest.SignAndVerifySTH (1 ms)
 [ RUN      ] LogSignerTest.SignAndVerifyCertSCTApiCrossCheck
-[       OK ] LogSignerTest.SignAndVerifyCertSCTApiCrossCheck (1 ms)
+[       OK ] LogSignerTest.SignAndVerifyCertSCTApiCrossCheck (0 ms)
 [ RUN      ] LogSignerTest.SignAndVerifyPrecertSCTApiCrossCheck
-[       OK ] LogSignerTest.SignAndVerifyPrecertSCTApiCrossCheck (0 ms)
+[       OK ] LogSignerTest.SignAndVerifyPrecertSCTApiCrossCheck (1 ms)
 [ RUN      ] LogSignerTest.SignAndVerifySTHApiCrossCheck
 [       OK ] LogSignerTest.SignAndVerifySTHApiCrossCheck (1 ms)
 [ RUN      ] LogSignerTest.SignInvalidType
 [       OK ] LogSignerTest.SignInvalidType (0 ms)
 [ RUN      ] LogSignerTest.SignEmptyCert
-[       OK ] LogSignerTest.SignEmptyCert (1 ms)
+[       OK ] LogSignerTest.SignEmptyCert (0 ms)
 [ RUN      ] LogSignerTest.SignEmptyPreCert
 [       OK ] LogSignerTest.SignEmptyPreCert (0 ms)
 [ RUN      ] LogSignerTest.SignInvalidIssuerKeyHash
@@ -36,11 +36,11 @@
 [ RUN      ] LogSignerTest.VerifyChangePrecertSCTTimestamp
 [       OK ] LogSignerTest.VerifyChangePrecertSCTTimestamp (1 ms)
 [ RUN      ] LogSignerTest.VerifyChangeSTHTimestamp
-[       OK ] LogSignerTest.VerifyChangeSTHTimestamp (1 ms)
+[       OK ] LogSignerTest.VerifyChangeSTHTimestamp (0 ms)
 [ RUN      ] LogSignerTest.VerifyChangeCert
 [       OK ] LogSignerTest.VerifyChangeCert (1 ms)
 [ RUN      ] LogSignerTest.VerifyChangePrecert
-[       OK ] LogSignerTest.VerifyChangePrecert (2 ms)
+[       OK ] LogSignerTest.VerifyChangePrecert (1 ms)
 [ RUN      ] LogSignerTest.VerifyChangeIssuerKeyHash
 [       OK ] LogSignerTest.VerifyChangeIssuerKeyHash (1 ms)
 [ RUN      ] LogSignerTest.VerifyChangeCertExtensions
@@ -48,26 +48,26 @@
 [ RUN      ] LogSignerTest.VerifyChangePrecertExtensions
 [       OK ] LogSignerTest.VerifyChangePrecertExtensions (1 ms)
 [ RUN      ] LogSignerTest.VerifyChangeTreeSize
-[       OK ] LogSignerTest.VerifyChangeTreeSize (1 ms)
+[       OK ] LogSignerTest.VerifyChangeTreeSize (0 ms)
 [ RUN      ] LogSignerTest.VerifySCTBadHashAlgorithm
 [       OK ] LogSignerTest.VerifySCTBadHashAlgorithm (0 ms)
 [ RUN      ] LogSignerTest.VerifySTHBadHashAlgorithm
-[       OK ] LogSignerTest.VerifySTHBadHashAlgorithm (1 ms)
+[       OK ] LogSignerTest.VerifySTHBadHashAlgorithm (0 ms)
 [ RUN      ] LogSignerTest.VerifySCTBadSignatureAlgorithm
 [       OK ] LogSignerTest.VerifySCTBadSignatureAlgorithm (0 ms)
 [ RUN      ] LogSignerTest.VerifySTHBadSignatureAlgorithm
-[       OK ] LogSignerTest.VerifySTHBadSignatureAlgorithm (1 ms)
+[       OK ] LogSignerTest.VerifySTHBadSignatureAlgorithm (0 ms)
 [ RUN      ] LogSignerTest.VerifyBadSCTSignature
-[       OK ] LogSignerTest.VerifyBadSCTSignature (18 ms)
+[       OK ] LogSignerTest.VerifyBadSCTSignature (14 ms)
 [ RUN      ] LogSignerTest.VerifyBadSTHSignature
-[       OK ] LogSignerTest.VerifyBadSTHSignature (18 ms)
+[       OK ] LogSignerTest.VerifyBadSTHSignature (19 ms)
 [ RUN      ] LogSignerTest.VerifyBadSerializedSCTSignature
-[       OK ] LogSignerTest.VerifyBadSerializedSCTSignature (28 ms)
+[       OK ] LogSignerTest.VerifyBadSerializedSCTSignature (76 ms)
 [ RUN      ] LogSignerTest.VerifyBadSerializedSTHSignature
 [       OK ] LogSignerTest.VerifyBadSerializedSTHSignature (9 ms)
-[----------] 32 tests from LogSignerTest (94 ms total)
+[----------] 32 tests from LogSignerTest (132 ms total)
 
 [----------] Global test environment tear-down
-[==========] 32 tests from 1 test case ran. (94 ms total)
+[==========] 32 tests from 1 test case ran. (133 ms total)
 [  PASSED  ] 32 tests.
 PASS cpp/log/log_signer_test (exit status: 0)

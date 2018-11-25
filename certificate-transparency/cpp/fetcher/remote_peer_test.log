@@ -2,12 +2,12 @@
 [----------] Global test environment set-up.
 [----------] 2 tests from RemotePeerTest
 [ RUN      ] RemotePeerTest.RejectsSTHWithInvalidTimestamp
-[       OK ] RemotePeerTest.RejectsSTHWithInvalidTimestamp (3337 ms)
+[       OK ] RemotePeerTest.RejectsSTHWithInvalidTimestamp (3345 ms)
 [ RUN      ] RemotePeerTest.RejectsSTHWithInvalidSignature
-[       OK ] RemotePeerTest.RejectsSTHWithInvalidSignature (3320 ms)
-[----------] 2 tests from RemotePeerTest (6657 ms total)
+[       OK ] RemotePeerTest.RejectsSTHWithInvalidSignature (3288 ms)
+[----------] 2 tests from RemotePeerTest (6633 ms total)
 
 [----------] Global test environment tear-down
-[==========] 2 tests from 1 test case ran. (6657 ms total)
+[==========] 2 tests from 1 test case ran. (6633 ms total)
 [  PASSED  ] 2 tests.
 PASS cpp/fetcher/remote_peer_test (exit status: 0)

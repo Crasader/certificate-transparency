@@ -2,7 +2,7 @@
 [----------] Global test environment set-up.
 [----------] 48 tests from SerializerTestV1
 [ RUN      ] SerializerTestV1.SerializeDigitallySignedKatTest
-[       OK ] SerializerTestV1.SerializeDigitallySignedKatTest (0 ms)
+[       OK ] SerializerTestV1.SerializeDigitallySignedKatTest (1 ms)
 [ RUN      ] SerializerTestV1.SerializeSCTKatTest
 [       OK ] SerializerTestV1.SerializeSCTKatTest (0 ms)
 [ RUN      ] SerializerTestV1.SerializeSCTListKatTest
@@ -42,7 +42,7 @@
 [ RUN      ] SerializerTestV1.DeserializeSCTBadSignatureType
 [       OK ] SerializerTestV1.DeserializeSCTBadSignatureType (0 ms)
 [ RUN      ] SerializerTestV1.DeserializeSCTTooShort
-[       OK ] SerializerTestV1.DeserializeSCTTooShort (0 ms)
+[       OK ] SerializerTestV1.DeserializeSCTTooShort (1 ms)
 [ RUN      ] SerializerTestV1.DeserializeSCTTooLong
 [       OK ] SerializerTestV1.DeserializeSCTTooLong (0 ms)
 [ RUN      ] SerializerTestV1.SerializeSTHSignatureInputKatTestV1
@@ -72,7 +72,7 @@
 [ RUN      ] SerializerTestV1.DeserializeEmptySCTList
 [       OK ] SerializerTestV1.DeserializeEmptySCTList (0 ms)
 [ RUN      ] SerializerTestV1.SerializeSCTListEmptySCTInList
-[       OK ] SerializerTestV1.SerializeSCTListEmptySCTInList (0 ms)
+[       OK ] SerializerTestV1.SerializeSCTListEmptySCTInList (1 ms)
 [ RUN      ] SerializerTestV1.DeserializeSCTListEmptySCTInList
 [       OK ] SerializerTestV1.DeserializeSCTListEmptySCTInList (0 ms)
 [ RUN      ] SerializerTestV1.SerializeDeserializeMultiSCTList
@@ -97,7 +97,7 @@
 [       OK ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyChain (0 ms)
 [ RUN      ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyChainCert
 [       OK ] SerializerTestV1.SerializeDeserializePrecertChainEntry_EmptyChainCert (0 ms)
-[----------] 48 tests from SerializerTestV1 (26 ms total)
+[----------] 48 tests from SerializerTestV1 (4 ms total)
 
 [----------] 15 tests from SerializerTestV2
 [ RUN      ] SerializerTestV2.SerializeSCTSignatureInputKatTestV2
@@ -129,7 +129,7 @@
 [ RUN      ] SerializerTestV2.SerializeSCTMerkleTreeLeafWithExtensionsTestV2
 [       OK ] SerializerTestV2.SerializeSCTMerkleTreeLeafWithExtensionsTestV2 (0 ms)
 [ RUN      ] SerializerTestV2.SerializeDeserializeSCTAddExtensionsV2
-[       OK ] SerializerTestV2.SerializeDeserializeSCTAddExtensionsV2 (1 ms)
+[       OK ] SerializerTestV2.SerializeDeserializeSCTAddExtensionsV2 (0 ms)
 [----------] 15 tests from SerializerTestV2 (1 ms total)
 
 [----------] 4 tests from SerializerTest
@@ -144,6 +144,6 @@
 [----------] 4 tests from SerializerTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 67 tests from 3 test cases ran. (27 ms total)
+[==========] 67 tests from 3 test cases ran. (5 ms total)
 [  PASSED  ] 67 tests.
 PASS cpp/proto/serializer_test (exit status: 0)

@@ -2,28 +2,28 @@
 [----------] Global test environment set-up.
 [----------] 8 tests from EtcdConsistentStoreDeathTest
 [ RUN      ] EtcdConsistentStoreDeathTest.TestNextAvailableSequenceNumberWhenNoSequencedEntriesOrServingSTHExist
-[       OK ] EtcdConsistentStoreDeathTest.TestNextAvailableSequenceNumberWhenNoSequencedEntriesOrServingSTHExist (22 ms)
+[       OK ] EtcdConsistentStoreDeathTest.TestNextAvailableSequenceNumberWhenNoSequencedEntriesOrServingSTHExist (16 ms)
 [ RUN      ] EtcdConsistentStoreDeathTest.TestSetServingSTHChecksInconsistentSize
-[       OK ] EtcdConsistentStoreDeathTest.TestSetServingSTHChecksInconsistentSize (232 ms)
+[       OK ] EtcdConsistentStoreDeathTest.TestSetServingSTHChecksInconsistentSize (168 ms)
 [ RUN      ] EtcdConsistentStoreDeathTest.TestAddPendingEntryForExistingNonIdenticalEntry
-[       OK ] EtcdConsistentStoreDeathTest.TestAddPendingEntryForExistingNonIdenticalEntry (207 ms)
+[       OK ] EtcdConsistentStoreDeathTest.TestAddPendingEntryForExistingNonIdenticalEntry (173 ms)
 [ RUN      ] EtcdConsistentStoreDeathTest.TestAddPendingEntryDoesNotAcceptSequencedEntry
-[       OK ] EtcdConsistentStoreDeathTest.TestAddPendingEntryDoesNotAcceptSequencedEntry (187 ms)
+[       OK ] EtcdConsistentStoreDeathTest.TestAddPendingEntryDoesNotAcceptSequencedEntry (195 ms)
 [ RUN      ] EtcdConsistentStoreDeathTest.TestGetPendingEntriesBarfsWithSequencedEntry
-[       OK ] EtcdConsistentStoreDeathTest.TestGetPendingEntriesBarfsWithSequencedEntry (161 ms)
+[       OK ] EtcdConsistentStoreDeathTest.TestGetPendingEntriesBarfsWithSequencedEntry (142 ms)
 [ RUN      ] EtcdConsistentStoreDeathTest.TestGetSequenceMappingBarfsOnGapsAboveTreeSize
-[       OK ] EtcdConsistentStoreDeathTest.TestGetSequenceMappingBarfsOnGapsAboveTreeSize (147 ms)
+[       OK ] EtcdConsistentStoreDeathTest.TestGetSequenceMappingBarfsOnGapsAboveTreeSize (137 ms)
 [ RUN      ] EtcdConsistentStoreDeathTest.TestUpdateSequenceMappingBarfsWithOutOfOrderSequenceNumber
-[       OK ] EtcdConsistentStoreDeathTest.TestUpdateSequenceMappingBarfsWithOutOfOrderSequenceNumber (135 ms)
+[       OK ] EtcdConsistentStoreDeathTest.TestUpdateSequenceMappingBarfsWithOutOfOrderSequenceNumber (145 ms)
 [ RUN      ] EtcdConsistentStoreDeathTest.TestUpdateSequenceMappingBarfsMappingNonContiguousToServingTree
-[       OK ] EtcdConsistentStoreDeathTest.TestUpdateSequenceMappingBarfsMappingNonContiguousToServingTree (246 ms)
-[----------] 8 tests from EtcdConsistentStoreDeathTest (1338 ms total)
+[       OK ] EtcdConsistentStoreDeathTest.TestUpdateSequenceMappingBarfsMappingNonContiguousToServingTree (148 ms)
+[----------] 8 tests from EtcdConsistentStoreDeathTest (1125 ms total)
 
 [----------] 23 tests from EtcdConsistentStoreTest
 [ RUN      ] EtcdConsistentStoreTest.TestNextAvailableSequenceNumberWhenSequencedEntriesExist
 [       OK ] EtcdConsistentStoreTest.TestNextAvailableSequenceNumberWhenSequencedEntriesExist (2 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestNextAvailableSequenceNumberWhenNoSequencedEntriesExistButHaveSTH
-[       OK ] EtcdConsistentStoreTest.TestNextAvailableSequenceNumberWhenNoSequencedEntriesExistButHaveSTH (1 ms)
+[       OK ] EtcdConsistentStoreTest.TestNextAvailableSequenceNumberWhenNoSequencedEntriesExistButHaveSTH (2 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestSetServingSTH
 [       OK ] EtcdConsistentStoreTest.TestSetServingSTH (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestSetServingSTHOverwrites
@@ -33,42 +33,42 @@
 [ RUN      ] EtcdConsistentStoreTest.TestAddPendingEntryWorks
 [       OK ] EtcdConsistentStoreTest.TestAddPendingEntryWorks (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestAddPendingEntryForExistingEntryReturnsSct
-[       OK ] EtcdConsistentStoreTest.TestAddPendingEntryForExistingEntryReturnsSct (1 ms)
+[       OK ] EtcdConsistentStoreTest.TestAddPendingEntryForExistingEntryReturnsSct (2 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestGetPendingEntryForHash
 [       OK ] EtcdConsistentStoreTest.TestGetPendingEntryForHash (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestGetPendingEntryForNonExistantHash
-[       OK ] EtcdConsistentStoreTest.TestGetPendingEntryForNonExistantHash (1 ms)
+[       OK ] EtcdConsistentStoreTest.TestGetPendingEntryForNonExistantHash (2 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestGetPendingEntries
-[       OK ] EtcdConsistentStoreTest.TestGetPendingEntries (2 ms)
+[       OK ] EtcdConsistentStoreTest.TestGetPendingEntries (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestGetSequenceMapping
-[       OK ] EtcdConsistentStoreTest.TestGetSequenceMapping (1 ms)
+[       OK ] EtcdConsistentStoreTest.TestGetSequenceMapping (2 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestGetSequenceMappingAllowsGapsBelowTreeSize
-[       OK ] EtcdConsistentStoreTest.TestGetSequenceMappingAllowsGapsBelowTreeSize (2 ms)
+[       OK ] EtcdConsistentStoreTest.TestGetSequenceMappingAllowsGapsBelowTreeSize (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestUpdateSequenceMapping
 [       OK ] EtcdConsistentStoreTest.TestUpdateSequenceMapping (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestSetClusterNodeState
-[       OK ] EtcdConsistentStoreTest.TestSetClusterNodeState (1 ms)
+[       OK ] EtcdConsistentStoreTest.TestSetClusterNodeState (2 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestSetClusterNodeStateHasTTL
-[       OK ] EtcdConsistentStoreTest.TestSetClusterNodeStateHasTTL (2003 ms)
+[       OK ] EtcdConsistentStoreTest.TestSetClusterNodeStateHasTTL (2002 ms)
 [ RUN      ] EtcdConsistentStoreTest.WatchServingSTH
-[       OK ] EtcdConsistentStoreTest.WatchServingSTH (3 ms)
+[       OK ] EtcdConsistentStoreTest.WatchServingSTH (2 ms)
 [ RUN      ] EtcdConsistentStoreTest.WatchClusterNodeStates
-[       OK ] EtcdConsistentStoreTest.WatchClusterNodeStates (2 ms)
+[       OK ] EtcdConsistentStoreTest.WatchClusterNodeStates (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.WatchClusterConfig
 [       OK ] EtcdConsistentStoreTest.WatchClusterConfig (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestDoesNotCleanUpIfNotMaster
-[       OK ] EtcdConsistentStoreTest.TestDoesNotCleanUpIfNotMaster (2 ms)
+[       OK ] EtcdConsistentStoreTest.TestDoesNotCleanUpIfNotMaster (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestEmptyClean
 [       OK ] EtcdConsistentStoreTest.TestEmptyClean (1 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestCleansUpToNewSTH
-[       OK ] EtcdConsistentStoreTest.TestCleansUpToNewSTH (5 ms)
+[       OK ] EtcdConsistentStoreTest.TestCleansUpToNewSTH (4 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestStoreStatsFetcher
-[       OK ] EtcdConsistentStoreTest.TestStoreStatsFetcher (2032 ms)
+[       OK ] EtcdConsistentStoreTest.TestStoreStatsFetcher (2029 ms)
 [ RUN      ] EtcdConsistentStoreTest.TestRejectsAddsWhenOverCapacity
-[       OK ] EtcdConsistentStoreTest.TestRejectsAddsWhenOverCapacity (2011 ms)
-[----------] 23 tests from EtcdConsistentStoreTest (6078 ms total)
+[       OK ] EtcdConsistentStoreTest.TestRejectsAddsWhenOverCapacity (2002 ms)
+[----------] 23 tests from EtcdConsistentStoreTest (6065 ms total)
 
 [----------] Global test environment tear-down
-[==========] 31 tests from 2 test cases ran. (7416 ms total)
+[==========] 31 tests from 2 test cases ran. (7190 ms total)
 [  PASSED  ] 31 tests.
 PASS cpp/log/etcd_consistent_store_test (exit status: 0)

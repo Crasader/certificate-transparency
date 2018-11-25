@@ -9,7 +9,7 @@
 [       OK ] ProxyTest.TestFilterHeadersHandlesMultipleReferencedHeaders (0 ms)
 [ RUN      ] ProxyTest.TestFilterHeadersHandlesMultipleConnectionHeaders
 [       OK ] ProxyTest.TestFilterHeadersHandlesMultipleConnectionHeaders (0 ms)
-[----------] 4 tests from ProxyTest (1 ms total)
+[----------] 4 tests from ProxyTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 4 tests from 1 test case ran. (1 ms total)

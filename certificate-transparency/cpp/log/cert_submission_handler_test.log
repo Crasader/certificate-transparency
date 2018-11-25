@@ -2,31 +2,31 @@
 [----------] Global test environment set-up.
 [----------] 11 tests from CertSubmissionHandlerTest
 [ RUN      ] CertSubmissionHandlerTest.SubmitCert
-[       OK ] CertSubmissionHandlerTest.SubmitCert (22 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitCert (9 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitEmptyCert
-[       OK ] CertSubmissionHandlerTest.SubmitEmptyCert (3 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitEmptyCert (1 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitInvalidCert
-[       OK ] CertSubmissionHandlerTest.SubmitInvalidCert (22 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitInvalidCert (9 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitChain
-[       OK ] CertSubmissionHandlerTest.SubmitChain (5 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitChain (2 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitPartialChain
-[       OK ] CertSubmissionHandlerTest.SubmitPartialChain (4 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitPartialChain (1 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitInvalidChain
-E1124 20:06:08.140599   570 cert_checker.cc:155] Failed to check issuer chain
-[       OK ] CertSubmissionHandlerTest.SubmitInvalidChain (21 ms)
+E1124 20:31:07.783951  5264 cert_checker.cc:155] Failed to check issuer chain
+[       OK ] CertSubmissionHandlerTest.SubmitInvalidChain (24 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitCertAsPreCert
-[       OK ] CertSubmissionHandlerTest.SubmitCertAsPreCert (3 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitCertAsPreCert (1 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitCertChainAsPreCert
-[       OK ] CertSubmissionHandlerTest.SubmitCertChainAsPreCert (3 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitCertChainAsPreCert (1 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitPreCertChain
-[       OK ] CertSubmissionHandlerTest.SubmitPreCertChain (4 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitPreCertChain (1 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitPreCertChainUsingPreCA
-[       OK ] CertSubmissionHandlerTest.SubmitPreCertChainUsingPreCA (4 ms)
+[       OK ] CertSubmissionHandlerTest.SubmitPreCertChainUsingPreCA (2 ms)
 [ RUN      ] CertSubmissionHandlerTest.SubmitInvalidPreCertChain
-[       OK ] CertSubmissionHandlerTest.SubmitInvalidPreCertChain (3 ms)
-[----------] 11 tests from CertSubmissionHandlerTest (96 ms total)
+[       OK ] CertSubmissionHandlerTest.SubmitInvalidPreCertChain (1 ms)
+[----------] 11 tests from CertSubmissionHandlerTest (53 ms total)
 
 [----------] Global test environment tear-down
-[==========] 11 tests from 1 test case ran. (98 ms total)
+[==========] 11 tests from 1 test case ran. (54 ms total)
 [  PASSED  ] 11 tests.
 PASS cpp/log/cert_submission_handler_test (exit status: 0)

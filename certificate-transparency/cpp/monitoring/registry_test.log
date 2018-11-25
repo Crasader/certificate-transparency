@@ -6,6 +6,6 @@
 [----------] 1 test from RegistryTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test case ran. (1 ms total)
+[==========] 1 test from 1 test case ran. (0 ms total)
 [  PASSED  ] 1 test.
 PASS cpp/monitoring/registry_test (exit status: 0)

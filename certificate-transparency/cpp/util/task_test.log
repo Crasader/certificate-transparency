@@ -4,12 +4,12 @@
 [ RUN      ] TaskDeathTest.DestroyIncompleteTask
 
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
-[       OK ] TaskDeathTest.DestroyIncompleteTask (109 ms)
-[----------] 1 test from TaskDeathTest (109 ms total)
+[       OK ] TaskDeathTest.DestroyIncompleteTask (101 ms)
+[----------] 1 test from TaskDeathTest (101 ms total)
 
 [----------] 18 tests from TaskTest/0, where TypeParam = (anonymous namespace)::TaskTester<cert_trans::ThreadPool, false>
 [ RUN      ] TaskTest/0.StateChanges
-[       OK ] TaskTest/0.StateChanges (8 ms)
+[       OK ] TaskTest/0.StateChanges (9 ms)
 [ RUN      ] TaskTest/0.DeleteWhenDone
 [       OK ] TaskTest/0.DeleteWhenDone (1 ms)
 [ RUN      ] TaskTest/0.Return
@@ -17,23 +17,23 @@
 [ RUN      ] TaskTest/0.HoldBlocksDone
 [       OK ] TaskTest/0.HoldBlocksDone (0 ms)
 [ RUN      ] TaskTest/0.MultipleReturn
-[       OK ] TaskTest/0.MultipleReturn (0 ms)
+[       OK ] TaskTest/0.MultipleReturn (1 ms)
 [ RUN      ] TaskTest/0.Cancel
-[       OK ] TaskTest/0.Cancel (1 ms)
+[       OK ] TaskTest/0.Cancel (0 ms)
 [ RUN      ] TaskTest/0.CancelAfterReturn
 [       OK ] TaskTest/0.CancelAfterReturn (0 ms)
 [ RUN      ] TaskTest/0.MultipleCancels
-[       OK ] TaskTest/0.MultipleCancels (0 ms)
+[       OK ] TaskTest/0.MultipleCancels (1 ms)
 [ RUN      ] TaskTest/0.CancelCallback
-[       OK ] TaskTest/0.CancelCallback (104 ms)
+[       OK ] TaskTest/0.CancelCallback (101 ms)
 [ RUN      ] TaskTest/0.CancelCallbackBlocksDone
-[       OK ] TaskTest/0.CancelCallbackBlocksDone (105 ms)
+[       OK ] TaskTest/0.CancelCallbackBlocksDone (101 ms)
 [ RUN      ] TaskTest/0.CancelCallbackNotCalledOnReturn
-[       OK ] TaskTest/0.CancelCallbackNotCalledOnReturn (2 ms)
+[       OK ] TaskTest/0.CancelCallbackNotCalledOnReturn (0 ms)
 [ RUN      ] TaskTest/0.CancelCallbackNotCalledAfterReturn
-[       OK ] TaskTest/0.CancelCallbackNotCalledAfterReturn (1 ms)
+[       OK ] TaskTest/0.CancelCallbackNotCalledAfterReturn (0 ms)
 [ RUN      ] TaskTest/0.CancelCallbackAfterCancel
-[       OK ] TaskTest/0.CancelCallbackAfterCancel (103 ms)
+[       OK ] TaskTest/0.CancelCallbackAfterCancel (101 ms)
 [ RUN      ] TaskTest/0.ReturnStillRunsCancelCallbacks
 [       OK ] TaskTest/0.ReturnStillRunsCancelCallbacks (0 ms)
 [ RUN      ] TaskTest/0.MultiCancel
@@ -41,14 +41,14 @@
 [ RUN      ] TaskTest/0.ChildBlocksDone
 [       OK ] TaskTest/0.ChildBlocksDone (0 ms)
 [ RUN      ] TaskTest/0.ChildCancel
-[       OK ] TaskTest/0.ChildCancel (0 ms)
+[       OK ] TaskTest/0.ChildCancel (1 ms)
 [ RUN      ] TaskTest/0.ChildReturn
-[       OK ] TaskTest/0.ChildReturn (1 ms)
-[----------] 18 tests from TaskTest/0 (327 ms total)
+[       OK ] TaskTest/0.ChildReturn (0 ms)
+[----------] 18 tests from TaskTest/0 (318 ms total)
 
 [----------] 18 tests from TaskTest/1, where TypeParam = (anonymous namespace)::TaskTester<(anonymous namespace)::InlineExecutor, true>
 [ RUN      ] TaskTest/1.StateChanges
-[       OK ] TaskTest/1.StateChanges (0 ms)
+[       OK ] TaskTest/1.StateChanges (1 ms)
 [ RUN      ] TaskTest/1.DeleteWhenDone
 [       OK ] TaskTest/1.DeleteWhenDone (0 ms)
 [ RUN      ] TaskTest/1.Return
@@ -64,15 +64,15 @@
 [ RUN      ] TaskTest/1.MultipleCancels
 [       OK ] TaskTest/1.MultipleCancels (0 ms)
 [ RUN      ] TaskTest/1.CancelCallback
-[       OK ] TaskTest/1.CancelCallback (100 ms)
+[       OK ] TaskTest/1.CancelCallback (105 ms)
 [ RUN      ] TaskTest/1.CancelCallbackBlocksDone
-[       OK ] TaskTest/1.CancelCallbackBlocksDone (203 ms)
+[       OK ] TaskTest/1.CancelCallbackBlocksDone (202 ms)
 [ RUN      ] TaskTest/1.CancelCallbackNotCalledOnReturn
 [       OK ] TaskTest/1.CancelCallbackNotCalledOnReturn (0 ms)
 [ RUN      ] TaskTest/1.CancelCallbackNotCalledAfterReturn
 [       OK ] TaskTest/1.CancelCallbackNotCalledAfterReturn (0 ms)
 [ RUN      ] TaskTest/1.CancelCallbackAfterCancel
-[       OK ] TaskTest/1.CancelCallbackAfterCancel (104 ms)
+[       OK ] TaskTest/1.CancelCallbackAfterCancel (100 ms)
 [ RUN      ] TaskTest/1.ReturnStillRunsCancelCallbacks
 [       OK ] TaskTest/1.ReturnStillRunsCancelCallbacks (0 ms)
 [ RUN      ] TaskTest/1.MultiCancel
@@ -82,10 +82,10 @@
 [ RUN      ] TaskTest/1.ChildCancel
 [       OK ] TaskTest/1.ChildCancel (0 ms)
 [ RUN      ] TaskTest/1.ChildReturn
-[       OK ] TaskTest/1.ChildReturn (1 ms)
-[----------] 18 tests from TaskTest/1 (408 ms total)
+[       OK ] TaskTest/1.ChildReturn (0 ms)
+[----------] 18 tests from TaskTest/1 (409 ms total)
 
 [----------] Global test environment tear-down
-[==========] 37 tests from 3 test cases ran. (844 ms total)
+[==========] 37 tests from 3 test cases ran. (828 ms total)
 [  PASSED  ] 37 tests.
 PASS cpp/util/task_test (exit status: 0)

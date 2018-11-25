@@ -9,7 +9,7 @@
 [       OK ] JsonWrapperTest.PartialEvBuffer (0 ms)
 [ RUN      ] JsonWrapperTest.FragmentedEvBuffer
 [       OK ] JsonWrapperTest.FragmentedEvBuffer (0 ms)
-[----------] 4 tests from JsonWrapperTest (0 ms total)
+[----------] 4 tests from JsonWrapperTest (1 ms total)
 
 [----------] Global test environment tear-down
 [==========] 4 tests from 1 test case ran. (1 ms total)

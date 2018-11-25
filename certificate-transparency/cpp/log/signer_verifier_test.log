@@ -2,16 +2,16 @@
 [----------] Global test environment set-up.
 [----------] 4 tests from SignerVerifierTest
 [ RUN      ] SignerVerifierTest.KeyID
-[       OK ] SignerVerifierTest.KeyID (0 ms)
+[       OK ] SignerVerifierTest.KeyID (1 ms)
 [ RUN      ] SignerVerifierTest.CheckSignature
-[       OK ] SignerVerifierTest.CheckSignature (1 ms)
+[       OK ] SignerVerifierTest.CheckSignature (0 ms)
 [ RUN      ] SignerVerifierTest.SignAndVerify
-[       OK ] SignerVerifierTest.SignAndVerify (1 ms)
+[       OK ] SignerVerifierTest.SignAndVerify (0 ms)
 [ RUN      ] SignerVerifierTest.Errors
-[       OK ] SignerVerifierTest.Errors (1 ms)
-[----------] 4 tests from SignerVerifierTest (3 ms total)
+[       OK ] SignerVerifierTest.Errors (0 ms)
+[----------] 4 tests from SignerVerifierTest (2 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test case ran. (5 ms total)
+[==========] 4 tests from 1 test case ran. (2 ms total)
 [  PASSED  ] 4 tests.
 PASS cpp/log/signer_verifier_test (exit status: 0)

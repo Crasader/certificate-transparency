@@ -2,7 +2,7 @@
 [----------] Global test environment set-up.
 [----------] 8 tests from MasterInstance/StrictConsistentStoreTest
 [ RUN      ] MasterInstance/StrictConsistentStoreTest.TestNextAvailableSequenceNumber/0
-[       OK ] MasterInstance/StrictConsistentStoreTest.TestNextAvailableSequenceNumber/0 (1 ms)
+[       OK ] MasterInstance/StrictConsistentStoreTest.TestNextAvailableSequenceNumber/0 (0 ms)
 [ RUN      ] MasterInstance/StrictConsistentStoreTest.TestNextAvailableSequenceNumber/1
 [       OK ] MasterInstance/StrictConsistentStoreTest.TestNextAvailableSequenceNumber/1 (0 ms)
 [ RUN      ] MasterInstance/StrictConsistentStoreTest.TestSetServingSTH/0
@@ -16,10 +16,10 @@
 [ RUN      ] MasterInstance/StrictConsistentStoreTest.TestClusterConfig/0
 [       OK ] MasterInstance/StrictConsistentStoreTest.TestClusterConfig/0 (0 ms)
 [ RUN      ] MasterInstance/StrictConsistentStoreTest.TestClusterConfig/1
-[       OK ] MasterInstance/StrictConsistentStoreTest.TestClusterConfig/1 (1 ms)
-[----------] 8 tests from MasterInstance/StrictConsistentStoreTest (4 ms total)
+[       OK ] MasterInstance/StrictConsistentStoreTest.TestClusterConfig/1 (0 ms)
+[----------] 8 tests from MasterInstance/StrictConsistentStoreTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 8 tests from 1 test case ran. (4 ms total)
+[==========] 8 tests from 1 test case ran. (2 ms total)
 [  PASSED  ] 8 tests.
 PASS cpp/log/strict_consistent_store_test (exit status: 0)

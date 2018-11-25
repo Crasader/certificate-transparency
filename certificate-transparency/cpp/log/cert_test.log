@@ -2,127 +2,127 @@
 [----------] Global test environment set-up.
 [----------] 45 tests from CertTest
 [ RUN      ] CertTest.LoadInvalid
-[       OK ] CertTest.LoadInvalid (30 ms)
+[       OK ] CertTest.LoadInvalid (20 ms)
 [ RUN      ] CertTest.LoadValidFromDer
-[       OK ] CertTest.LoadValidFromDer (9 ms)
+[       OK ] CertTest.LoadValidFromDer (5 ms)
 [ RUN      ] CertTest.LoadInvalidFromDer
-[       OK ] CertTest.LoadInvalidFromDer (11 ms)
+[       OK ] CertTest.LoadInvalidFromDer (6 ms)
 [ RUN      ] CertTest.PrintVersion
-[       OK ] CertTest.PrintVersion (11 ms)
+[       OK ] CertTest.PrintVersion (5 ms)
 [ RUN      ] CertTest.PrintSerialNumber
-[       OK ] CertTest.PrintSerialNumber (8 ms)
+[       OK ] CertTest.PrintSerialNumber (5 ms)
 [ RUN      ] CertTest.PrintSubjectName
-[       OK ] CertTest.PrintSubjectName (9 ms)
+[       OK ] CertTest.PrintSubjectName (7 ms)
 [ RUN      ] CertTest.PrintIssuerName
-[       OK ] CertTest.PrintIssuerName (12 ms)
+[       OK ] CertTest.PrintIssuerName (5 ms)
 [ RUN      ] CertTest.PrintNotBefore
-[       OK ] CertTest.PrintNotBefore (12 ms)
+[       OK ] CertTest.PrintNotBefore (5 ms)
 [ RUN      ] CertTest.PrintNotAfter
-[       OK ] CertTest.PrintNotAfter (11 ms)
+[       OK ] CertTest.PrintNotAfter (8 ms)
 [ RUN      ] CertTest.PrintSignatureAlgorithm
-[       OK ] CertTest.PrintSignatureAlgorithm (9 ms)
+[       OK ] CertTest.PrintSignatureAlgorithm (8 ms)
 [ RUN      ] CertTest.TestUnsupportedAlgorithm
-[       OK ] CertTest.TestUnsupportedAlgorithm (10 ms)
+[       OK ] CertTest.TestUnsupportedAlgorithm (6 ms)
 [ RUN      ] CertTest.Identical
-[       OK ] CertTest.Identical (11 ms)
+[       OK ] CertTest.Identical (5 ms)
 [ RUN      ] CertTest.Extensions
-[       OK ] CertTest.Extensions (8 ms)
+[       OK ] CertTest.Extensions (5 ms)
 [ RUN      ] CertTest.Issuers
-[       OK ] CertTest.Issuers (10 ms)
+[       OK ] CertTest.Issuers (8 ms)
 [ RUN      ] CertTest.DerEncodedNames
-[       OK ] CertTest.DerEncodedNames (8 ms)
+[       OK ] CertTest.DerEncodedNames (9 ms)
 [ RUN      ] CertTest.SignatureAlgorithmMatches
-[       OK ] CertTest.SignatureAlgorithmMatches (6 ms)
+[       OK ] CertTest.SignatureAlgorithmMatches (8 ms)
 [ RUN      ] CertTest.IllegalSignatureAlgorithmParameter
-[       OK ] CertTest.IllegalSignatureAlgorithmParameter (5 ms)
+[       OK ] CertTest.IllegalSignatureAlgorithmParameter (8 ms)
 [ RUN      ] CertTest.TestSubjectAltNames
-[       OK ] CertTest.TestSubjectAltNames (5 ms)
+[       OK ] CertTest.TestSubjectAltNames (7 ms)
 [ RUN      ] CertTest.SPKI
 [       OK ] CertTest.SPKI (6 ms)
 [ RUN      ] CertTest.SPKISha256Digest
-[       OK ] CertTest.SPKISha256Digest (6 ms)
+[       OK ] CertTest.SPKISha256Digest (8 ms)
 [ RUN      ] CertTest.TestIsRedactedHost
-[       OK ] CertTest.TestIsRedactedHost (4 ms)
+[       OK ] CertTest.TestIsRedactedHost (8 ms)
 [ RUN      ] CertTest.TestIsValidRedactedHost
 [       OK ] CertTest.TestIsValidRedactedHost (6 ms)
 [ RUN      ] CertTest.TestNoWildcardRedactionIsValid
-[       OK ] CertTest.TestNoWildcardRedactionIsValid (5 ms)
+[       OK ] CertTest.TestNoWildcardRedactionIsValid (7 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase5
-[       OK ] CertTest.TestWildcardRedactTestCase5 (5 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase5 (8 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase6
-[       OK ] CertTest.TestWildcardRedactTestCase6 (5 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase6 (6 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase7
-[       OK ] CertTest.TestWildcardRedactTestCase7 (7 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase7 (5 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase8
 [       OK ] CertTest.TestWildcardRedactTestCase8 (5 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase9
-[       OK ] CertTest.TestWildcardRedactTestCase9 (5 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase9 (8 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase10
-[       OK ] CertTest.TestWildcardRedactTestCase10 (6 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase10 (7 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase11
-[       OK ] CertTest.TestWildcardRedactTestCase11 (5 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase11 (6 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase12
-[       OK ] CertTest.TestWildcardRedactTestCase12 (6 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase12 (5 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase13
-[       OK ] CertTest.TestWildcardRedactTestCase13 (6 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase13 (5 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase14
-[       OK ] CertTest.TestWildcardRedactTestCase14 (5 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase14 (6 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase15
-[       OK ] CertTest.TestWildcardRedactTestCase15 (6 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase15 (5 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase22
 [       OK ] CertTest.TestWildcardRedactTestCase22 (5 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase23
 [       OK ] CertTest.TestWildcardRedactTestCase23 (5 ms)
 [ RUN      ] CertTest.TestWildcardRedactTestCase24
-[       OK ] CertTest.TestWildcardRedactTestCase24 (5 ms)
+[       OK ] CertTest.TestWildcardRedactTestCase24 (6 ms)
 [ RUN      ] CertTest.TestConstraintTestCase2
-[       OK ] CertTest.TestConstraintTestCase2 (6 ms)
+[       OK ] CertTest.TestConstraintTestCase2 (5 ms)
 [ RUN      ] CertTest.TestConstraintTestCase3
-[       OK ] CertTest.TestConstraintTestCase3 (5 ms)
+[       OK ] CertTest.TestConstraintTestCase3 (8 ms)
 [ RUN      ] CertTest.TestConstraintTestCase4
-[       OK ] CertTest.TestConstraintTestCase4 (5 ms)
+[       OK ] CertTest.TestConstraintTestCase4 (7 ms)
 [ RUN      ] CertTest.TestConstraintTestCase5
-[       OK ] CertTest.TestConstraintTestCase5 (6 ms)
+[       OK ] CertTest.TestConstraintTestCase5 (8 ms)
 [ RUN      ] CertTest.TestConstraintTestCase6
-[       OK ] CertTest.TestConstraintTestCase6 (5 ms)
+[       OK ] CertTest.TestConstraintTestCase6 (7 ms)
 [ RUN      ] CertTest.TestConstraintTestCase7
-[       OK ] CertTest.TestConstraintTestCase7 (5 ms)
+[       OK ] CertTest.TestConstraintTestCase7 (7 ms)
 [ RUN      ] CertTest.TestConstraintTestCase8
-[       OK ] CertTest.TestConstraintTestCase8 (5 ms)
+[       OK ] CertTest.TestConstraintTestCase8 (8 ms)
 [ RUN      ] CertTest.TestConstraintTestCase9
-[       OK ] CertTest.TestConstraintTestCase9 (5 ms)
-[----------] 45 tests from CertTest (333 ms total)
+[       OK ] CertTest.TestConstraintTestCase9 (8 ms)
+[----------] 45 tests from CertTest (308 ms total)
 
 [----------] 3 tests from TbsCertificateTest
 [ RUN      ] TbsCertificateTest.DerEncoding
 [       OK ] TbsCertificateTest.DerEncoding (5 ms)
 [ RUN      ] TbsCertificateTest.DeleteExtension
-[       OK ] TbsCertificateTest.DeleteExtension (6 ms)
+[       OK ] TbsCertificateTest.DeleteExtension (5 ms)
 [ RUN      ] TbsCertificateTest.CopyIssuer
 [       OK ] TbsCertificateTest.CopyIssuer (5 ms)
-[----------] 3 tests from TbsCertificateTest (16 ms total)
+[----------] 3 tests from TbsCertificateTest (15 ms total)
 
 [----------] 6 tests from CertChainTest
 [ RUN      ] CertChainTest.LoadValid
-[       OK ] CertChainTest.LoadValid (6 ms)
+[       OK ] CertChainTest.LoadValid (7 ms)
 [ RUN      ] CertChainTest.LoadInvalid
-[       OK ] CertChainTest.LoadInvalid (5 ms)
+[       OK ] CertChainTest.LoadInvalid (7 ms)
 [ RUN      ] CertChainTest.AddCert
-E1124 20:06:08.791210   579 cert.cc:1359] Attempting to add an invalid cert
-E1124 20:06:08.798317   579 cert.cc:1359] Attempting to add an invalid cert
-[       OK ] CertChainTest.AddCert (12 ms)
+E1124 20:31:08.325409  5273 cert.cc:1359] Attempting to add an invalid cert
+E1124 20:31:08.333055  5273 cert.cc:1359] Attempting to add an invalid cert
+[       OK ] CertChainTest.AddCert (15 ms)
 [ RUN      ] CertChainTest.RemoveCert
-E1124 20:06:08.803568   579 cert.cc:1371] Chain is not loaded
-[       OK ] CertChainTest.RemoveCert (5 ms)
+E1124 20:31:08.339583  5273 cert.cc:1371] Chain is not loaded
+[       OK ] CertChainTest.RemoveCert (7 ms)
 [ RUN      ] CertChainTest.IssuerChains
-E1124 20:06:08.808902   579 cert.cc:1414] Chain is not loaded
-E1124 20:06:08.809378   579 cert.cc:1448] Chain is not loaded
-[       OK ] CertChainTest.IssuerChains (6 ms)
+E1124 20:31:08.345639  5273 cert.cc:1414] Chain is not loaded
+E1124 20:31:08.497058  5273 cert.cc:1448] Chain is not loaded
+[       OK ] CertChainTest.IssuerChains (158 ms)
 [ RUN      ] CertChainTest.PreCertChain
-[       OK ] CertChainTest.PreCertChain (6 ms)
-[----------] 6 tests from CertChainTest (40 ms total)
+[       OK ] CertChainTest.PreCertChain (20 ms)
+[----------] 6 tests from CertChainTest (214 ms total)
 
 [----------] Global test environment tear-down
-[==========] 54 tests from 3 test cases ran. (390 ms total)
+[==========] 54 tests from 3 test cases ran. (537 ms total)
 [  PASSED  ] 54 tests.
 PASS cpp/log/cert_test (exit status: 0)

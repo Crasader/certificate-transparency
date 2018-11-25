@@ -4,30 +4,30 @@
 [ RUN      ] CmsVerifierTest.CmsSignTestCase2
 [       OK ] CmsVerifierTest.CmsSignTestCase2 (1 ms)
 [ RUN      ] CmsVerifierTest.CmsSignTestCase3
-[       OK ] CmsVerifierTest.CmsSignTestCase3 (1 ms)
+[       OK ] CmsVerifierTest.CmsSignTestCase3 (0 ms)
 [ RUN      ] CmsVerifierTest.CmsSignTestCase4
 [       OK ] CmsVerifierTest.CmsSignTestCase4 (1 ms)
 [ RUN      ] CmsVerifierTest.CmsVerifyTestCase2
-[       OK ] CmsVerifierTest.CmsVerifyTestCase2 (16 ms)
+[       OK ] CmsVerifierTest.CmsVerifyTestCase2 (18 ms)
 [ RUN      ] CmsVerifierTest.CmsVerifyTestCase3
 [       OK ] CmsVerifierTest.CmsVerifyTestCase3 (1 ms)
 [ RUN      ] CmsVerifierTest.CmsVerifyTestCase4
-E1124 20:09:18.927862  1917 cms_verifier.cc:202] OpenSSL errors left on stack:
+E1124 20:34:13.697280  7353 cms_verifier.cc:202] OpenSSL errors left on stack:
 	error:2E09D08A:CMS routines:CMS_verify:signer certificate not found
-[       OK ] CmsVerifierTest.CmsVerifyTestCase4 (9 ms)
+[       OK ] CmsVerifierTest.CmsVerifyTestCase4 (8 ms)
 [ RUN      ] CmsVerifierTest.CmsVerifyTestCase5
 [       OK ] CmsVerifierTest.CmsVerifyTestCase5 (1 ms)
 [ RUN      ] CmsVerifierTest.CmsVerifyTestCase7
-E1124 20:09:18.937491  1917 cms_verifier.cc:202] OpenSSL errors left on stack:
+E1124 20:34:13.706152  7353 cms_verifier.cc:202] OpenSSL errors left on stack:
 	error:2E09D08A:CMS routines:CMS_verify:signer certificate not found
-[       OK ] CmsVerifierTest.CmsVerifyTestCase7 (2 ms)
+[       OK ] CmsVerifierTest.CmsVerifyTestCase7 (1 ms)
 [ RUN      ] CmsVerifierTest.CmsVerifyTestCase8
-E1124 20:09:18.939430  1917 cms_verifier.cc:202] OpenSSL errors left on stack:
+E1124 20:34:13.707386  7353 cms_verifier.cc:202] OpenSSL errors left on stack:
 	error:2E09D08A:CMS routines:CMS_verify:signer certificate not found
 [       OK ] CmsVerifierTest.CmsVerifyTestCase8 (1 ms)
-[----------] 9 tests from CmsVerifierTest (33 ms total)
+[----------] 9 tests from CmsVerifierTest (32 ms total)
 
 [----------] Global test environment tear-down
-[==========] 9 tests from 1 test case ran. (34 ms total)
+[==========] 9 tests from 1 test case ran. (33 ms total)
 [  PASSED  ] 9 tests.
 PASS cpp/log/cms_verifier_test (exit status: 0)

@@ -2,31 +2,31 @@
 [----------] Global test environment set-up.
 [----------] 5 tests from LogLookupTest/0, where TypeParam = cert_trans::FileDB
 [ RUN      ] LogLookupTest/0.Lookup
-[       OK ] LogLookupTest/0.Lookup (76 ms)
+[       OK ] LogLookupTest/0.Lookup (65 ms)
 [ RUN      ] LogLookupTest/0.NotFound
-[       OK ] LogLookupTest/0.NotFound (47 ms)
+[       OK ] LogLookupTest/0.NotFound (49 ms)
 [ RUN      ] LogLookupTest/0.Update
-[       OK ] LogLookupTest/0.Update (44 ms)
+[       OK ] LogLookupTest/0.Update (79 ms)
 [ RUN      ] LogLookupTest/0.Verify
-[       OK ] LogLookupTest/0.Verify (46 ms)
+[       OK ] LogLookupTest/0.Verify (51 ms)
 [ RUN      ] LogLookupTest/0.VerifyWithPath
-[       OK ] LogLookupTest/0.VerifyWithPath (173 ms)
-[----------] 5 tests from LogLookupTest/0 (386 ms total)
+[       OK ] LogLookupTest/0.VerifyWithPath (204 ms)
+[----------] 5 tests from LogLookupTest/0 (448 ms total)
 
 [----------] 5 tests from LogLookupTest/1, where TypeParam = cert_trans::SQLiteDB
 [ RUN      ] LogLookupTest/1.Lookup
-[       OK ] LogLookupTest/1.Lookup (897 ms)
+[       OK ] LogLookupTest/1.Lookup (662 ms)
 [ RUN      ] LogLookupTest/1.NotFound
-[       OK ] LogLookupTest/1.NotFound (1075 ms)
+[       OK ] LogLookupTest/1.NotFound (723 ms)
 [ RUN      ] LogLookupTest/1.Update
-[       OK ] LogLookupTest/1.Update (944 ms)
+[       OK ] LogLookupTest/1.Update (833 ms)
 [ RUN      ] LogLookupTest/1.Verify
-[       OK ] LogLookupTest/1.Verify (853 ms)
+[       OK ] LogLookupTest/1.Verify (954 ms)
 [ RUN      ] LogLookupTest/1.VerifyWithPath
-[       OK ] LogLookupTest/1.VerifyWithPath (982 ms)
-[----------] 5 tests from LogLookupTest/1 (4752 ms total)
+[       OK ] LogLookupTest/1.VerifyWithPath (907 ms)
+[----------] 5 tests from LogLookupTest/1 (4079 ms total)
 
 [----------] Global test environment tear-down
-[==========] 10 tests from 2 test cases ran. (5138 ms total)
+[==========] 10 tests from 2 test cases ran. (4527 ms total)
 [  PASSED  ] 10 tests.
 PASS cpp/log/log_lookup_test (exit status: 0)

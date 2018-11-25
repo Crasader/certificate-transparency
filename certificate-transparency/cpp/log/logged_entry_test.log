@@ -8,14 +8,14 @@
 [ RUN      ] LoggedTest/0.SequenceIsNotPreserved
 [       OK ] LoggedTest/0.SequenceIsNotPreserved (0 ms)
 [ RUN      ] LoggedTest/0.DifferentHash
-[       OK ] LoggedTest/0.DifferentHash (1 ms)
+[       OK ] LoggedTest/0.DifferentHash (0 ms)
 [ RUN      ] LoggedTest/0.SerializationPreservesHash
 [       OK ] LoggedTest/0.SerializationPreservesHash (0 ms)
 [ RUN      ] LoggedTest/0.SerializationPreservesMerkleSerialization
 [       OK ] LoggedTest/0.SerializationPreservesMerkleSerialization (0 ms)
 [ RUN      ] LoggedTest/0.DifferentMerkleSerialization
 [       OK ] LoggedTest/0.DifferentMerkleSerialization (0 ms)
-[----------] 7 tests from LoggedTest/0 (2 ms total)
+[----------] 7 tests from LoggedTest/0 (1 ms total)
 
 [----------] Global test environment tear-down
 [==========] 7 tests from 1 test case ran. (2 ms total)

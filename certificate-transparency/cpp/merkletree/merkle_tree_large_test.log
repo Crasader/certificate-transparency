@@ -2,10 +2,10 @@
 [----------] Global test environment set-up.
 [----------] 1 test from MerkleTreeLargeTest
 [ RUN      ] MerkleTreeLargeTest.BuildLargeTree
-[       OK ] MerkleTreeLargeTest.BuildLargeTree (29706 ms)
-[----------] 1 test from MerkleTreeLargeTest (29706 ms total)
+[       OK ] MerkleTreeLargeTest.BuildLargeTree (33123 ms)
+[----------] 1 test from MerkleTreeLargeTest (33124 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test case ran. (29707 ms total)
+[==========] 1 test from 1 test case ran. (33124 ms total)
 [  PASSED  ] 1 test.
 PASS cpp/merkletree/merkle_tree_large_test (exit status: 0)

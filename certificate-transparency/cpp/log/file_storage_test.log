@@ -27,7 +27,7 @@
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
 
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
-[       OK ] FailingFileStorageDeathTest.DieOnFailedCreate (1783 ms)
+[       OK ] FailingFileStorageDeathTest.DieOnFailedCreate (1326 ms)
 [ RUN      ] FailingFileStorageDeathTest.DieOnFailedUpdate
 
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
@@ -39,7 +39,7 @@
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
 
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
-[       OK ] FailingFileStorageDeathTest.DieOnFailedUpdate (577 ms)
+[       OK ] FailingFileStorageDeathTest.DieOnFailedUpdate (662 ms)
 [ RUN      ] FailingFileStorageDeathTest.ResumeOnFailedCreate
 
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
@@ -61,7 +61,7 @@
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
 
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
-[       OK ] FailingFileStorageDeathTest.ResumeOnFailedCreate (1559 ms)
+[       OK ] FailingFileStorageDeathTest.ResumeOnFailedCreate (2024 ms)
 [ RUN      ] FailingFileStorageDeathTest.ResumeOnFailedUpdate
 
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
@@ -73,27 +73,27 @@
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
 
 [WARNING] /mnt/c/Github/metal/ct/googlemock/gtest/src/gtest-death-test.cc:825:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
-[       OK ] FailingFileStorageDeathTest.ResumeOnFailedUpdate (743 ms)
-[----------] 4 tests from FailingFileStorageDeathTest (4662 ms total)
+[       OK ] FailingFileStorageDeathTest.ResumeOnFailedUpdate (691 ms)
+[----------] 4 tests from FailingFileStorageDeathTest (4704 ms total)
 
 [----------] 7 tests from BasicFileStorageTest
 [ RUN      ] BasicFileStorageTest.Create
-[       OK ] BasicFileStorageTest.Create (23 ms)
+[       OK ] BasicFileStorageTest.Create (24 ms)
 [ RUN      ] BasicFileStorageTest.Scan
-[       OK ] BasicFileStorageTest.Scan (24 ms)
+[       OK ] BasicFileStorageTest.Scan (23 ms)
 [ RUN      ] BasicFileStorageTest.CreateDuplicate
-[       OK ] BasicFileStorageTest.CreateDuplicate (19 ms)
+[       OK ] BasicFileStorageTest.CreateDuplicate (22 ms)
 [ RUN      ] BasicFileStorageTest.Update
 [       OK ] BasicFileStorageTest.Update (26 ms)
 [ RUN      ] BasicFileStorageTest.LookupInvalidKey
-[       OK ] BasicFileStorageTest.LookupInvalidKey (18 ms)
+[       OK ] BasicFileStorageTest.LookupInvalidKey (21 ms)
 [ RUN      ] BasicFileStorageTest.Resume
-[       OK ] BasicFileStorageTest.Resume (20 ms)
+[       OK ] BasicFileStorageTest.Resume (26 ms)
 [ RUN      ] BasicFileStorageTest.ScanOnResume
-[       OK ] BasicFileStorageTest.ScanOnResume (21 ms)
-[----------] 7 tests from BasicFileStorageTest (152 ms total)
+[       OK ] BasicFileStorageTest.ScanOnResume (23 ms)
+[----------] 7 tests from BasicFileStorageTest (166 ms total)
 
 [----------] Global test environment tear-down
-[==========] 12 tests from 3 test cases ran. (4814 ms total)
+[==========] 12 tests from 3 test cases ran. (4871 ms total)
 [  PASSED  ] 12 tests.
 PASS cpp/log/file_storage_test (exit status: 0)

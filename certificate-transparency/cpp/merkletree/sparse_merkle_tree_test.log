@@ -2,21 +2,21 @@
 [----------] Global test environment set-up.
 [----------] 6 tests from SparseMerkleTreeTest
 [ RUN      ] SparseMerkleTreeTest.PathBitAndPathStreamOperatorAgree
-[       OK ] SparseMerkleTreeTest.PathBitAndPathStreamOperatorAgree (1 ms)
+[       OK ] SparseMerkleTreeTest.PathBitAndPathStreamOperatorAgree (0 ms)
 [ RUN      ] SparseMerkleTreeTest.ReferenceEmptyTreeRootKAT
-[       OK ] SparseMerkleTreeTest.ReferenceEmptyTreeRootKAT (0 ms)
+[       OK ] SparseMerkleTreeTest.ReferenceEmptyTreeRootKAT (1 ms)
 [ RUN      ] SparseMerkleTreeTest.EmptyTreeRootKAT
 [       OK ] SparseMerkleTreeTest.EmptyTreeRootKAT (0 ms)
 [ RUN      ] SparseMerkleTreeTest.SimpleTest
 [       OK ] SparseMerkleTreeTest.SimpleTest (2 ms)
 [ RUN      ] SparseMerkleTreeTest.RandomReferenceTest
-[       OK ] SparseMerkleTreeTest.RandomReferenceTest (1023 ms)
+[       OK ] SparseMerkleTreeTest.RandomReferenceTest (1152 ms)
 [ RUN      ] SparseMerkleTreeTest.TestSetLeaf
-[       OK ] SparseMerkleTreeTest.TestSetLeaf (2 ms)
-[----------] 6 tests from SparseMerkleTreeTest (1029 ms total)
+[       OK ] SparseMerkleTreeTest.TestSetLeaf (3 ms)
+[----------] 6 tests from SparseMerkleTreeTest (1159 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 1 test case ran. (1029 ms total)
+[==========] 6 tests from 1 test case ran. (1159 ms total)
 [  PASSED  ] 6 tests.
 
   YOU HAVE 2 DISABLED TESTS

@@ -2,16 +2,16 @@
 [----------] Global test environment set-up.
 [----------] 4 tests from SyncTaskTest
 [ RUN      ] SyncTaskTest.StateChange
-[       OK ] SyncTaskTest.StateChange (9 ms)
+[       OK ] SyncTaskTest.StateChange (41 ms)
 [ RUN      ] SyncTaskTest.Wait
-[       OK ] SyncTaskTest.Wait (101 ms)
+[       OK ] SyncTaskTest.Wait (102 ms)
 [ RUN      ] SyncTaskTest.CancelBefore
-[       OK ] SyncTaskTest.CancelBefore (1 ms)
+[       OK ] SyncTaskTest.CancelBefore (0 ms)
 [ RUN      ] SyncTaskTest.CancelAfter
-[       OK ] SyncTaskTest.CancelAfter (0 ms)
-[----------] 4 tests from SyncTaskTest (111 ms total)
+[       OK ] SyncTaskTest.CancelAfter (1 ms)
+[----------] 4 tests from SyncTaskTest (144 ms total)
 
 [----------] Global test environment tear-down
-[==========] 4 tests from 1 test case ran. (111 ms total)
+[==========] 4 tests from 1 test case ran. (145 ms total)
 [  PASSED  ] 4 tests.
 PASS cpp/util/sync_task_test (exit status: 0)

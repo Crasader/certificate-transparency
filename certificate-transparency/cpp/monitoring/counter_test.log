@@ -18,6 +18,6 @@
 [----------] 7 tests from CounterTest (1 ms total)
 
 [----------] Global test environment tear-down
-[==========] 7 tests from 1 test case ran. (2 ms total)
+[==========] 7 tests from 1 test case ran. (1 ms total)
 [  PASSED  ] 7 tests.
 PASS cpp/monitoring/counter_test (exit status: 0)

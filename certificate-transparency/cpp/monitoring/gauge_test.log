@@ -6,7 +6,7 @@
 [ RUN      ] GaugeTest.TestGaugeLabelNamesEmpty
 [       OK ] GaugeTest.TestGaugeLabelNamesEmpty (0 ms)
 [ RUN      ] GaugeTest.TestGaugeLabelNames
-[       OK ] GaugeTest.TestGaugeLabelNames (1 ms)
+[       OK ] GaugeTest.TestGaugeLabelNames (0 ms)
 [ RUN      ] GaugeTest.TestGaugeHelp
 [       OK ] GaugeTest.TestGaugeHelp (0 ms)
 [ RUN      ] GaugeTest.TestGauge

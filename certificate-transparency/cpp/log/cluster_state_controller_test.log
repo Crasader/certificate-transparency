@@ -2,40 +2,40 @@
 [----------] Global test environment set-up.
 [----------] 16 tests from ClusterStateControllerTest
 [ RUN      ] ClusterStateControllerTest.TestNewTreeHead
-[       OK ] ClusterStateControllerTest.TestNewTreeHead (77 ms)
+[       OK ] ClusterStateControllerTest.TestNewTreeHead (59 ms)
 [ RUN      ] ClusterStateControllerTest.TestCalculateServingSTHAt50Percent
-[       OK ] ClusterStateControllerTest.TestCalculateServingSTHAt50Percent (3053 ms)
+[       OK ] ClusterStateControllerTest.TestCalculateServingSTHAt50Percent (3027 ms)
 [ RUN      ] ClusterStateControllerTest.TestCalculateServingSTHAt70Percent
-[       OK ] ClusterStateControllerTest.TestCalculateServingSTHAt70Percent (3093 ms)
+[       OK ] ClusterStateControllerTest.TestCalculateServingSTHAt70Percent (3028 ms)
 [ RUN      ] ClusterStateControllerTest.TestCalculateServingSTHAt60PercentTwoNodeMin
-[       OK ] ClusterStateControllerTest.TestCalculateServingSTHAt60PercentTwoNodeMin (3106 ms)
+[       OK ] ClusterStateControllerTest.TestCalculateServingSTHAt60PercentTwoNodeMin (3027 ms)
 [ RUN      ] ClusterStateControllerTest.TestCalculateServingSTHAsClusterMoves
-[       OK ] ClusterStateControllerTest.TestCalculateServingSTHAsClusterMoves (4052 ms)
+[       OK ] ClusterStateControllerTest.TestCalculateServingSTHAsClusterMoves (4029 ms)
 [ RUN      ] ClusterStateControllerTest.TestKeepsNewerSTH
-[       OK ] ClusterStateControllerTest.TestKeepsNewerSTH (1099 ms)
+[       OK ] ClusterStateControllerTest.TestKeepsNewerSTH (1027 ms)
 [ RUN      ] ClusterStateControllerTest.TestCannotSelectSmallerSTH
-[       OK ] ClusterStateControllerTest.TestCannotSelectSmallerSTH (4112 ms)
+[       OK ] ClusterStateControllerTest.TestCannotSelectSmallerSTH (4025 ms)
 [ RUN      ] ClusterStateControllerTest.TestUsesLargestSTHWithIdenticalTimestamp
-[       OK ] ClusterStateControllerTest.TestUsesLargestSTHWithIdenticalTimestamp (2296 ms)
+[       OK ] ClusterStateControllerTest.TestUsesLargestSTHWithIdenticalTimestamp (2024 ms)
 [ RUN      ] ClusterStateControllerTest.TestDoesNotReuseSTHTimestamp
-[       OK ] ClusterStateControllerTest.TestDoesNotReuseSTHTimestamp (4118 ms)
+[       OK ] ClusterStateControllerTest.TestDoesNotReuseSTHTimestamp (4029 ms)
 [ RUN      ] ClusterStateControllerTest.TestConfigChangesCauseServingSTHToBeRecalculated
-[       OK ] ClusterStateControllerTest.TestConfigChangesCauseServingSTHToBeRecalculated (3091 ms)
+[       OK ] ClusterStateControllerTest.TestConfigChangesCauseServingSTHToBeRecalculated (3026 ms)
 [ RUN      ] ClusterStateControllerTest.TestGetLocalNodeState
-[       OK ] ClusterStateControllerTest.TestGetLocalNodeState (69 ms)
+[       OK ] ClusterStateControllerTest.TestGetLocalNodeState (22 ms)
 [ RUN      ] ClusterStateControllerTest.TestNodeHostPort
-[       OK ] ClusterStateControllerTest.TestNodeHostPort (2085 ms)
+[       OK ] ClusterStateControllerTest.TestNodeHostPort (2026 ms)
 [ RUN      ] ClusterStateControllerTest.TestStoresServingSthInDatabase
-[       OK ] ClusterStateControllerTest.TestStoresServingSthInDatabase (1117 ms)
+[       OK ] ClusterStateControllerTest.TestStoresServingSthInDatabase (1029 ms)
 [ RUN      ] ClusterStateControllerTest.TestWaitsToStoreSTHInDatabaseWhenStale
-[       OK ] ClusterStateControllerTest.TestWaitsToStoreSTHInDatabaseWhenStale (2124 ms)
+[       OK ] ClusterStateControllerTest.TestWaitsToStoreSTHInDatabaseWhenStale (2094 ms)
 [ RUN      ] ClusterStateControllerTest.TestNodeIsStale
-[       OK ] ClusterStateControllerTest.TestNodeIsStale (2048 ms)
+[       OK ] ClusterStateControllerTest.TestNodeIsStale (2059 ms)
 [ RUN      ] ClusterStateControllerTest.TestGetFreshNodes
-[       OK ] ClusterStateControllerTest.TestGetFreshNodes (4073 ms)
-[----------] 16 tests from ClusterStateControllerTest (39616 ms total)
+[       OK ] ClusterStateControllerTest.TestGetFreshNodes (4033 ms)
+[----------] 16 tests from ClusterStateControllerTest (38565 ms total)
 
 [----------] Global test environment tear-down
-[==========] 16 tests from 1 test case ran. (39616 ms total)
+[==========] 16 tests from 1 test case ran. (38565 ms total)
 [  PASSED  ] 16 tests.
 PASS cpp/log/cluster_state_controller_test (exit status: 0)
